@@ -839,10 +839,10 @@ font-family: 'Shadows Into Light', cursive;
     }
 
     .menu {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
        position: absolute;       
         margin-top: 190px;
-        left: 290px;      
+        left: 250px;      
         width: 50%;
         justify-content: space-between;
     }
@@ -870,7 +870,7 @@ font-family: 'Shadows Into Light', cursive;
         background-color: white;
         width: 190px;
         margin-top: 50px;
-        left: 910px;
+        left: 810px;
         text-align: center;
         height: 30px;
         border: none;
@@ -879,7 +879,7 @@ font-family: 'Shadows Into Light', cursive;
     .enviar {
         margin: 10px;
         position: relative;
-        left: 910px;
+        left: 810px;
         color: rgba(7, 6, 6, 0.432);
         border-radius: 5px;
         background-color: white;
@@ -892,18 +892,19 @@ font-family: 'Shadows Into Light', cursive;
 
     
     .main_container img {     
-    height: auto;
+     display: flex;     
+    height: 68vh;
   
     }
   
     .main_container__p {
-        font-size: 1.4rem;
+        font-size: 2.5rem;
         padding: 20px;
     }
   
     .main_button__buttonracionp {
         font-size: 0.8rem;
-        left: 90px;
+        left: 100px;
         top: 560px;
         width: 300px;
         height: 50px;
@@ -911,8 +912,9 @@ font-family: 'Shadows Into Light', cursive;
       }
 
       .main_button__buttonraciong {
+     
         font-size: 0.8rem;
-        left: 520px;
+        left: 450px;
         top: 560px;
         width: 300px;
         height: 50px;
@@ -921,7 +923,7 @@ font-family: 'Shadows Into Light', cursive;
  
       .main_button__buttonantip {
         font-size: 0.8rem;
-        left: 90px;
+        left: 100px;
         top: 630px;
         width: 300px;
         height: 50px;
@@ -930,7 +932,7 @@ font-family: 'Shadows Into Light', cursive;
 
       .main_button__buttonaccesorios {
         font-size: 0.8rem;
-        left: 520px;
+        left: 450px;
         top: 630px;
         width: 300px;
         height: 50px;
@@ -940,29 +942,30 @@ font-family: 'Shadows Into Light', cursive;
 
 
      .aside1_container img{  
-          
-       padding: 20px;
-       margin-left: 60px;
       
+     margin: auto;
+     
      }
   
     .aside1_container p {
         font-family: 'Architects Daughter', cursive;
         color: black;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
         padding: 10px;
     }
   
   
      .aside2_container img{
-        
-        padding: 20px;
+      position: relative;     
+    
+  
+    
     }
 
     .footer img {
         text-align: center;
-        margin-left: 250px;
+        margin-left: 220px;
         margin-top: 30px;
         width: 80px;
         height: 80px;
@@ -997,12 +1000,12 @@ font-family: 'Shadows Into Light', cursive;
       .form input {       
         position: relative;
         font-size: 1.5rem;
-        margin-left: 700px;
+        margin-left: 650px;
         background-color: #edfafd;
         padding: 5px;
         margin-top: 10px;
         height: 40px;
-        width: 600px;
+        width: 500px;
         border-radius: 10px;
         font-family: 'Architects Daughter', cursive;
     
@@ -1012,12 +1015,12 @@ font-family: 'Shadows Into Light', cursive;
         display: flex;
         font-size: 1.5rem;
         margin-top: 10px;
-        margin-left: 700px;
+        margin-left: 650px;
         background-color: #edfafd;
         border-radius: 15px;
         padding: 5px;
         height: 200px;
-        width: 600px;
+        width: 500px;
         font-family: 'Architects Daughter', cursive;
       }
 
@@ -1025,7 +1028,7 @@ font-family: 'Shadows Into Light', cursive;
 
       .footercontacto{
         margin-top: 20px;
-background-color: #28d9e6;
+          background-color: #28d9e6;
       }
       .footercontacto img{ 
             text-align: center;
@@ -1036,7 +1039,24 @@ background-color: #28d9e6;
           
       }
 
-
+      .mainservicios h3 { 
+        padding: 50px;
+        font-size: 2rem;
+        font-family: 'Architects Daughter', cursive;
+     }
+    
+     .mainservicios p {
+      margin: 50px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Architects Daughter', cursive;
+     }
+    
+    
+     .mainservicios img{
+          padding: 100px;
+     }
+    
 
       
     }
