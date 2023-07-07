@@ -591,10 +591,30 @@ font-family: 'Shadows Into Light', cursive;
  
   @media(min-width: 768px){
 
+
+    .container {
+      width: 100%;
+      height: 98vh;
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 15% 50% 20% 15%;
+      grid-template-areas:
+        "header header"
+        "main main"
+        "aside1 aside2"
+        "footer footer";
+  
+    }
+     
+
     img {
         width: 100%;
   
     }
+
+
+   
     .container_top-nav h1 {       
         text-align: center;
         font-family: 'Architects Daughter', cursive;
@@ -656,22 +676,26 @@ font-family: 'Shadows Into Light', cursive;
     }
         
 
+   .main_container {
+    display: flex;
+   }
+  
+   .main_container img {
+    width: 65%;
+    padding: 50px;
+ 
+   }
 
-    
-    .main_container img {     
-    height: 500px;
-  
-    }
-  
+
     .main_container__p {
         font-size: 1.4rem;
-        padding: 20px;
+        padding: 60px;
     }
   
     .main_button__buttonracionp {
         font-size: 0.8rem;
-        left: 35px;
-        top: 450px;
+       left: 580px; left: 580px;
+        top: 50px;
         width: 170px;
         height: 40px;
         cursor: pointer;
@@ -679,8 +703,8 @@ font-family: 'Shadows Into Light', cursive;
 
       .main_button__buttonraciong {
         font-size: 0.8rem;
-        left: 220px;
-        top: 450px;
+        left: 580px;
+        top: 150px;
         width: 170px;
         height: 40px;
         cursor: pointer;
@@ -688,8 +712,8 @@ font-family: 'Shadows Into Light', cursive;
  
       .main_button__buttonantip {
         font-size: 0.8rem;
-        left: 405px;
-        top: 450px;
+        left: 580px;
+        top: 250px;
         width: 170px;
         height: 40px;
         cursor: pointer;
@@ -697,8 +721,8 @@ font-family: 'Shadows Into Light', cursive;
 
       .main_button__buttonaccesorios {
         font-size: 0.8rem;
-        left: 590px;
-        top: 450px;
+        left: 580px;
+        top: 350px;
         width: 170px;
         height: 40px;
         cursor: pointer;
@@ -706,11 +730,10 @@ font-family: 'Shadows Into Light', cursive;
 
 
 
-     .aside1_container img{  
-       max-height: 250px;  
-       width: auto;      
-       padding: 20px;
-       margin-left: 80px;
+     .aside1_container img{        
+       width: 40%;      
+       margin-left: 120px;
+      
       
      }
   
@@ -724,11 +747,12 @@ font-family: 'Shadows Into Light', cursive;
   
   
      .aside2_container img{
-        max-height: 300px;
-        padding: 20px;
+        width: 40%;
+        margin-left: 120px;
     }
 
     .footer img {
+      margin-top: 40px;
         text-align: center;
         margin-left: 150px;
         margin-bottom: 0;
@@ -799,266 +823,261 @@ font-family: 'Shadows Into Light', cursive;
 
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 98vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-areas:
+      "header header"
+      "main aside1"
+      "main aside2"
+      "footer footer";
+
+  }
+
+
+  img {
+    width: 100%;
+
+  }
+
+
+  .container_top-nav h1 {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3.5rem;
+    position: relative;
+    top: 20px;
+
+  }
+
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 190px;
+    left: 250px;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+
+  .menu-button-container {
+    display: none;
+  }
+
+
+  .container_top-nav img {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    top: 50px;
+
+  }
+
+  .buscar {
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    width: 190px;
+    margin-top: 50px;
+    left: 810px;
+    text-align: center;
+    height: 30px;
+    border: none;
+  }
+
+  .enviar {
+    margin: 10px;
+    position: relative;
+    left: 810px;
+    color: rgba(7, 6, 6, 0.432);
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+  }
 
 
 
-    .container {
-        width: 100%;
-        height: 98vh;
-        padding: 5px;
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 15% 35% 35% 15%;
-        grid-template-areas: 
-        "header header"
-        "main aside1"
-        "main aside2"
-        "footer footer";
-      
+.main_container img {
+  display: flex;
 
+width: 100%;
+}
 
-    }
+.main_container__p {
+  font-size: 2.5rem;
+  padding: 20px;
+}
 
-    img {
-        width: 100%;
-  
-    }
-    .container_top-nav h1 {       
-        text-align: center;
-        font-family: 'Architects Daughter', cursive;
-        font-size:3.5rem;
-        position: relative;
-        top: 20px;
+.main_button__buttonracionp {
+  font-size: 0.8rem;
+  left: 100px;
+  top: 560px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
 
-    }
-  
-  
-    .menu-button-container {
-        display: flex;
-    }
+.main_button__buttonraciong {
 
-    .menu {
-        font-size: 1.4rem;
-       position: absolute;       
-        margin-top: 190px;
-        left: 250px;      
-        width: 50%;
-        justify-content: space-between;
-    }
+  font-size: 0.8rem;
+  left: 450px;
+  top: 560px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
 
+.main_button__buttonantip {
+  font-size: 0.8rem;
+  left: 100px;
+  top: 630px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
 
-    .menu-button-container {
-        display: none;
-    }
-
-
-
-  
-    .container_top-nav img {
-        width: 110px;
-        height: 110px;
-        position: relative;
-        top: 50px;
-  
-    }
-
-    .buscar {
-        position: relative;
-        color: black;
-        border-radius: 5px;
-        background-color: white;
-        width: 190px;
-        margin-top: 50px;
-        left: 810px;
-        text-align: center;
-        height: 30px;
-        border: none;
-    }
-    
-    .enviar {
-        margin: 10px;
-        position: relative;
-        left: 810px;
-        color: rgba(7, 6, 6, 0.432);
-        border-radius: 5px;
-        background-color: white;
-        border: none;
-        width: 70px;
-        height: 30px;
-    }
-        
-
-
-    
-    .main_container img {     
-     display: flex;     
-    height: 68vh;
-  
-    }
-  
-    .main_container__p {
-        font-size: 2.5rem;
-        padding: 20px;
-    }
-  
-    .main_button__buttonracionp {
-        font-size: 0.8rem;
-        left: 100px;
-        top: 560px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-      }
-
-      .main_button__buttonraciong {
-     
-        font-size: 0.8rem;
-        left: 450px;
-        top: 560px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-      }
- 
-      .main_button__buttonantip {
-        font-size: 0.8rem;
-        left: 100px;
-        top: 630px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-      }
-
-      .main_button__buttonaccesorios {
-        font-size: 0.8rem;
-        left: 450px;
-        top: 630px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-      }
+.main_button__buttonaccesorios {
+  font-size: 0.8rem;
+  left: 450px;
+  top: 630px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
 
 
 
-     .aside1_container img{  
-      
-     margin: auto;
-     
-     }
-  
-    .aside1_container p {
-        font-family: 'Architects Daughter', cursive;
-        color: black;
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 10px;
-    }
-  
-  
-     .aside2_container img{
-      position: relative;     
-    
-  
-    
-    }
+.aside1_container img {
+  align-items: center;
 
-    .footer img {
-        text-align: center;
-        margin-left: 220px;
-        margin-top: 30px;
-        width: 80px;
-        height: 80px;
-  
-  
-    }
+  margin-top: 50px;
 
-    
-    .contacto h3 {
-        font-size: 1.8rem;
-        margin-left: 20px;
-        margin-top: 20px;
-        color: #28d9e6;
-       font-family: 'Architects Daughter', cursive;
-     }
-      
-      .contacto p {   
-        font-size: 1.6rem;
-        margin-left: 20px;
-        margin-top: 20px;
-        color: black;
-        font-family: 'Architects Daughter', cursive;
-    } 
-    
-    
+}
 
-    .mapa {
-        position: absolute;
-         margin-top: 20px;  
-      
-      }
-      .form input {       
-        position: relative;
-        font-size: 1.5rem;
-        margin-left: 650px;
-        background-color: #edfafd;
-        padding: 5px;
-        margin-top: 10px;
-        height: 40px;
-        width: 500px;
-        border-radius: 10px;
-        font-family: 'Architects Daughter', cursive;
-    
-      }
-          
-      .textarea {
-        display: flex;
-        font-size: 1.5rem;
-        margin-top: 10px;
-        margin-left: 650px;
-        background-color: #edfafd;
-        border-radius: 15px;
-        padding: 5px;
-        height: 200px;
-        width: 500px;
-        font-family: 'Architects Daughter', cursive;
-      }
+.aside1_container p {
+  font-family: 'Architects Daughter', cursive;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.aside2_container img {
+  position: relative;
+  align-items: center;
+  margin-top: 50px;
 
 
 
-      .footercontacto{
-        margin-top: 20px;
-          background-color: #28d9e6;
-      }
-      .footercontacto img{ 
-            text-align: center;
-            margin-left: 270px;
-            margin-top: 10px;
-            width: 70px;
-            height: 70px;
-          
-      }
+}
 
-      .mainservicios h3 { 
-        padding: 50px;
-        font-size: 2rem;
-        font-family: 'Architects Daughter', cursive;
-     }
-    
-     .mainservicios p {
-      margin: 50px;
-        text-align: center;
-        font-size: 1.8rem;
-        font-family: 'Architects Daughter', cursive;
-     }
-    
-    
-     .mainservicios img{
-          padding: 100px;
-     }
-    
+.footer img {
+  text-align: center;
+  margin-left: 270px;
+  margin-top: 30px;
+  width: 80px;
+  height: 80px;
 
-      
-    }
 
-    
+}
+
+
+.contacto h3 {
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #28d9e6;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.contacto p {
+  font-size: 1.6rem;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+
+.mapa {
+  position: absolute;
+  margin-top: 20px;
+
+}
+
+.form input {
+  position: relative;
+  font-size: 1.5rem;
+  margin-left: 650px;
+  background-color: #edfafd;
+  padding: 5px;
+  margin-top: 10px;
+  height: 40px;
+  width: 500px;
+  border-radius: 10px;
+  font-family: 'Architects Daughter', cursive;
+
+}
+
+.textarea {
+  display: flex;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-left: 650px;
+  background-color: #edfafd;
+  border-radius: 15px;
+  padding: 5px;
+  height: 200px;
+  width: 500px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+
+.footercontacto {
+  margin-top: 20px;
+  background-color: #28d9e6;
+}
+
+.footercontacto img {
+  text-align: center;
+  margin-left: 270px;
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+
+}
+
+.mainservicios h3 {
+  padding: 50px;
+  font-size: 2rem;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.mainservicios p {
+  margin: 50px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+.mainservicios img {
+  padding: 100px;
+}
+}
