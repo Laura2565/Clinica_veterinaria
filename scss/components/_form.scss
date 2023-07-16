@@ -1,0 +1,99 @@
+.formulario {
+    position: relative;    
+    margin-top: 50px;
+      
+  }
+  
+  .form input {
+    
+    font-size: 1.2rem;
+    margin-left: 30px;
+    background-color: #edfafd;
+    padding: 5px;
+    margin-top: 10px;
+    height: 40px;
+    width: 330px;
+    border-radius: 10px;
+    font-family: 'Architects Daughter', cursive;
+  
+  }
+  
+  
+  .textarea {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #edfafd;
+    border-radius: 15px;
+    padding: 5px;
+    height: 200px;
+    width: 330px;
+    font-family: 'Architects Daughter', cursive;
+  }
+
+
+
+  
+  @media(min-width: 768px){
+    .form input {
+        font-size: 1.5rem;
+        margin-left: 30px;
+        background-color: #edfafd;
+        padding: 5px;
+        margin-top: 10px;
+        height: 40px;
+        width: 600px;
+        border-radius: 10px;
+        font-family: 'Architects Daughter', cursive;
+      
+      }
+          
+      .textarea {
+        font-size: 1.5rem;
+        margin-top:    10px;
+        margin-left: 30px;
+        background-color: #edfafd;
+        border-radius: 15px;
+        padding: 5px;
+        height: 200px;
+        width: 600px;
+        font-family: 'Architects Daughter', cursive;
+      }  
+
+
+  }
+
+
+  @media(min-width: 1200px) {
+    .form input {
+        position: relative;
+        font-size: 1.5rem;
+        margin-left: 650px;
+        background-color: #edfafd;
+        padding: 5px;
+        margin-top: 10px;
+        height: 40px;
+        width: 500px;
+        border-radius: 10px;
+        font-family: 'Architects Daughter', cursive;
+      
+      }
+      
+      .textarea {
+        display: flex;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-left: 650px;
+        background-color: #edfafd;
+        border-radius: 15px;
+        padding: 5px;
+        height: 200px;
+        width: 500px;
+        font-family: 'Architects Daughter', cursive;
+      }
+      
+
+
+
+
+  }

@@ -1,0 +1,115 @@
+.contacto h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #28d9e6;
+   font-family: 'Architects Daughter', cursive;
+ }
+  
+  .contacto p {   
+    margin-left: 20px;
+    margin-top: 20px;
+    color: black;
+    font-family: 'Architects Daughter', cursive;
+}
+  
+  .mapa {
+    display: flex;
+     margin-top: 20px;  
+  
+  }
+   
+  
+  .footercontacto{
+    margin-top: 20px;
+    background-color: #28d9e6;
+  }
+  .footercontacto img{ 
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+  
+
+  }
+
+
+  @media(min-width: 768px){
+  
+    .contacto h3 {
+        font-size: 1.8rem;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: #28d9e6;
+       font-family: 'Architects Daughter', cursive;
+     }
+      
+      .contacto p {   
+        font-size: 1.6rem;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: black;
+        font-family: 'Architects Daughter', cursive;
+    } 
+
+
+    .footercontacto{
+        margin-top: 20px;
+        background-color: #28d9e6;
+      }
+      .footercontacto img{ 
+            text-align: center;
+            margin-left: 150px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+      
+    
+      }
+    
+}
+
+
+
+@media(min-width: 1200px) {
+
+    .contacto h3 {
+        font-size: 1.8rem;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: #28d9e6;
+        font-family: 'Architects Daughter', cursive;
+      }
+      
+      .contacto p {
+        font-size: 1.6rem;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: black;
+        font-family: 'Architects Daughter', cursive;
+      }
+      
+      
+      
+      .mapa {
+        position: absolute;
+        margin-top: 20px;
+      
+      }
+
+      .footercontacto {
+        margin-top: 20px;
+        background-color: #28d9e6;
+      }
+      
+      .footercontacto img {
+        text-align: center;
+        margin-left: 270px;
+        margin-top: 10px;
+        width: 70px;
+        height: 70px;
+      
+      }
+      
+}
+

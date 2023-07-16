@@ -1,0 +1,886 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.buscar {
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  width: 150px;
+  margin-top: 8px;
+  margin-left: 100px;
+  text-align: center;
+  height: 20px;
+  border: none;
+}
+
+.enviar {
+  margin: 5px;
+  color: rgba(7, 6, 6, 0.432);
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  width: 50px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .buscar {
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    width: 150px;
+    margin-top: 8px;
+    left: 480px;
+    text-align: center;
+    height: 20px;
+    border: none;
+  }
+  .enviar {
+    margin: 10px;
+    position: relative;
+    left: 480px;
+    color: rgba(7, 6, 6, 0.432);
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .buscar {
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    width: 190px;
+    margin-top: 50px;
+    left: 810px;
+    text-align: center;
+    height: 30px;
+    border: none;
+  }
+  .enviar {
+    margin: 10px;
+    position: relative;
+    left: 810px;
+    color: rgba(7, 6, 6, 0.432);
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+  }
+}
+.formulario {
+  position: relative;
+  margin-top: 50px;
+}
+
+.form input {
+  font-size: 1.2rem;
+  margin-left: 30px;
+  background-color: #edfafd;
+  padding: 5px;
+  margin-top: 10px;
+  height: 40px;
+  width: 330px;
+  border-radius: 10px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.textarea {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: #edfafd;
+  border-radius: 15px;
+  padding: 5px;
+  height: 200px;
+  width: 330px;
+  font-family: "Architects Daughter", cursive;
+}
+
+@media (min-width: 768px) {
+  .form input {
+    font-size: 1.5rem;
+    margin-left: 30px;
+    background-color: #edfafd;
+    padding: 5px;
+    margin-top: 10px;
+    height: 40px;
+    width: 600px;
+    border-radius: 10px;
+    font-family: "Architects Daughter", cursive;
+  }
+  .textarea {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: #edfafd;
+    border-radius: 15px;
+    padding: 5px;
+    height: 200px;
+    width: 600px;
+    font-family: "Architects Daughter", cursive;
+  }
+}
+@media (min-width: 1200px) {
+  .form input {
+    position: relative;
+    font-size: 1.5rem;
+    margin-left: 650px;
+    background-color: #edfafd;
+    padding: 5px;
+    margin-top: 10px;
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: "Architects Daughter", cursive;
+  }
+  .textarea {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 650px;
+    background-color: #edfafd;
+    border-radius: 15px;
+    padding: 5px;
+    height: 200px;
+    width: 500px;
+    font-family: "Architects Daughter", cursive;
+  }
+}
+.container_top-nav h1 {
+  color: white;
+  vertical-align: center;
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+}
+
+.container_top-nav img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+}
+
+.container_top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #28d9e6;
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    background-color: white;
+    font-family: "Architects Daughter", cursive;
+    font-size: 0.5rem;
+    height: 1.5em;
+    padding: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+@media (min-width: 768px) {
+  .container_top-nav h1 {
+    text-align: center;
+    font-family: "Architects Daughter", cursive;
+    font-size: 1.8rem;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    margin-top: 90px;
+    left: 160px;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .menu-button-container {
+    display: none;
+  }
+  .container_top-nav img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .container_top-nav h1 {
+    text-align: center;
+    font-family: "Architects Daughter", cursive;
+    font-size: 3.5rem;
+    position: relative;
+    top: 20px;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 190px;
+    left: 250px;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .menu-button-container {
+    display: none;
+  }
+  .container_top-nav img {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    top: 50px;
+  }
+}
+.containercards {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 3px solid #e0fffd;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista {
+  text-align: center;
+  margin-top: 5px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 3px;
+}
+
+.containerimg {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  display: flex;
+  width: 50%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.h4 {
+  font-family: "Bruno Ace", cursive;
+  font-size: 16px;
+  color: #050000;
+  text-align: center;
+}
+
+.cardp {
+  font-family: "Bruno Ace", cursive;
+  font-size: 16px;
+  color: #050000;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footercomprar {
+  background-color: #28d9e6;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.comprar {
+  background-color: white;
+  color: #28d9e6;
+  font-family: "Bruno Ace", cursive;
+  font-size: 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contacto h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #28d9e6;
+  font-family: "Architects Daughter", cursive;
+}
+
+.contacto p {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: black;
+  font-family: "Architects Daughter", cursive;
+}
+
+.mapa {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footercontacto {
+  margin-top: 20px;
+  background-color: #28d9e6;
+}
+
+.footercontacto img {
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .contacto h3 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #28d9e6;
+    font-family: "Architects Daughter", cursive;
+  }
+  .contacto p {
+    font-size: 1.6rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: black;
+    font-family: "Architects Daughter", cursive;
+  }
+  .footercontacto {
+    margin-top: 20px;
+    background-color: #28d9e6;
+  }
+  .footercontacto img {
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto h3 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #28d9e6;
+    font-family: "Architects Daughter", cursive;
+  }
+  .contacto p {
+    font-size: 1.6rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: black;
+    font-family: "Architects Daughter", cursive;
+  }
+  .mapa {
+    position: absolute;
+    margin-top: 20px;
+  }
+  .footercontacto {
+    margin-top: 20px;
+    background-color: #28d9e6;
+  }
+  .footercontacto img {
+    text-align: center;
+    margin-left: 270px;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+  }
+}
+.container {
+  width: 100%;
+  height: 98vh;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 50% 30% 10%;
+  grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
+}
+
+.header {
+  background-color: #28d9e6;
+  grid-area: header;
+}
+
+.main {
+  background-color: #d0f8f8;
+  grid-area: main;
+}
+
+.aside1 {
+  background-color: rgb(253, 236, 159);
+  grid-area: aside1;
+}
+
+.aside2 {
+  background-color: rgb(253, 236, 159);
+  grid-area: aside2;
+}
+
+.footer {
+  background-color: #28d9e6;
+  grid-area: footer;
+  margin-bottom: 0;
+}
+
+.main_container {
+  position: relative;
+  width: 100%;
+}
+
+.main_container__p {
+  font-family: "Architects Daughter", cursive;
+  color: rgb(252, 251, 251);
+  position: relative;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+}
+
+.main_container img {
+  position: absolute;
+}
+
+.main_button__buttonracionp {
+  font-family: "Architects Daughter", cursive;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+  padding: 10px;
+  background-color: #28d9e6;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 15px;
+  top: 320px;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main_button__buttonraciong {
+  font-family: "Architects Daughter", cursive;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+  padding: 10px;
+  background-color: #28d9e6;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 200px;
+  top: 320px;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main_button__buttonantip {
+  font-family: "Architects Daughter", cursive;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+  padding: 10px;
+  background-color: #28d9e6;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 15px;
+  top: 380px;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main_button__buttonaccesorios {
+  font-family: "Architects Daughter", cursive;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  line-height: 22.5px;
+  text-align: center;
+  padding: 10px;
+  background-color: #28d9e6;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 200px;
+  top: 380px;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/*aside mobile*/
+.aside1_container img {
+  position: relative;
+  padding: 5px;
+}
+
+.aside1_container p {
+  font-family: "Architects Daughter", cursive;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.aside2_container img {
+  position: relative;
+  padding: 5px;
+}
+
+.footer img {
+  margin-left: 70px;
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    height: 98vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 50% 20% 15%;
+    grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
+  }
+  .main_container {
+    display: flex;
+  }
+  .main_container img {
+    width: 65%;
+    padding: 50px;
+  }
+  .main_container__p {
+    font-size: 1.4rem;
+    padding: 60px;
+  }
+  .main_button__buttonracionp {
+    font-size: 0.8rem;
+    left: 580px;
+    left: 580px;
+    top: 50px;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .main_button__buttonraciong {
+    font-size: 0.8rem;
+    left: 580px;
+    top: 150px;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .main_button__buttonantip {
+    font-size: 0.8rem;
+    left: 580px;
+    top: 250px;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .main_button__buttonaccesorios {
+    font-size: 0.8rem;
+    left: 580px;
+    top: 350px;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .aside1_container img {
+    width: 40%;
+    margin-left: 120px;
+  }
+  .aside1_container p {
+    font-family: "Architects Daughter", cursive;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+  }
+  .aside2_container img {
+    width: 40%;
+    margin-left: 120px;
+  }
+  .footer img {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 150px;
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 98vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-areas: "header header" "main aside1" "main aside2" "footer footer";
+  }
+  .main_container img {
+    display: flex;
+    width: 100%;
+  }
+  .main_container__p {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  .main_button__buttonracionp {
+    font-size: 0.8rem;
+    left: 100px;
+    top: 560px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .main_button__buttonraciong {
+    font-size: 0.8rem;
+    left: 450px;
+    top: 560px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .main_button__buttonantip {
+    font-size: 0.8rem;
+    left: 100px;
+    top: 630px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .main_button__buttonaccesorios {
+    font-size: 0.8rem;
+    left: 450px;
+    top: 630px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .aside1_container img {
+    align-items: center;
+    margin-top: 50px;
+  }
+  .aside1_container p {
+    font-family: "Architects Daughter", cursive;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+  }
+  .aside2_container img {
+    position: relative;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .footer img {
+    text-align: center;
+    margin-left: 270px;
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+  }
+}
+.mainservicios h3 {
+  padding: 5px;
+  font-size: 1.2rem;
+  font-family: "Architects Daughter", cursive;
+}
+
+.mainservicios p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Architects Daughter", cursive;
+}
+
+.mainservicios img {
+  padding: 10px;
+}
+
+.footerservicios {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 20px;
+  background-color: #28d9e6;
+}
+
+.footerservicios img {
+  text-align: center;
+  margin-left: 70px;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 1200px) {
+  .mainservicios h3 {
+    padding: 50px;
+    font-size: 2rem;
+    font-family: "Architects Daughter", cursive;
+  }
+  .mainservicios p {
+    margin: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Architects Daughter", cursive;
+  }
+  .mainservicios img {
+    padding: 100px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
