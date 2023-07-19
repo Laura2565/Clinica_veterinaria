@@ -14,7 +14,7 @@
   }
    
   .header {
-      background-color: #28d9e6;
+      background-color: $c-primario;
       grid-area: header;
 
   }
@@ -35,13 +35,14 @@
   }
 
   .footer {
-      background-color: #28d9e6;
+      background: linear-gradient( to top, $c-primario, skyblue, white);
       grid-area: footer;
       margin-bottom: 0;
   }
 
 
   .main_container {
+    display: flex;
     position: relative;
     width: 100%;
 }
@@ -53,7 +54,8 @@
     font-size: 1rem;
     left: 15px;
     top: 15px;
-}
+
+  }
 
 .main_container img {
     position: absolute;
@@ -68,7 +70,7 @@
     line-height: 22.5px;
     text-align: center;
     padding: 10px;
-    background-color: #28d9e6;
+    background-color: $c-primario;
     border: none;
     border-radius: 3px;
     position: absolute;
@@ -77,6 +79,14 @@
     width: 170px;
     height: 40px;
     cursor: pointer;
+      
+
+
+    
+    &:hover{
+        transform: scale(1.1);
+    }
+   
 }
 
 
@@ -88,7 +98,7 @@
     line-height: 22.5px;
     text-align: center;
     padding: 10px;
-    background-color: #28d9e6;
+    background-color: $c-primario;
     border: none;
     border-radius: 3px;
     position: absolute;
@@ -97,19 +107,28 @@
     width: 170px;
     height: 40px;
     cursor: pointer;
+   
+
+    
+    &:hover{
+        transform: scale(1.1);
+    }
+
+
 }
 
 
 
 .main_button__buttonantip {
+
     font-family: 'Architects Daughter', cursive;
-    color: #FFFFFF;
+    color: white;
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 22.5px;
     text-align: center;
     padding: 10px;
-    background-color: #28d9e6;
+    background-color: $c-primario;
     border: none;
     border-radius: 3px;
     position: absolute;
@@ -118,6 +137,14 @@
     width: 170px;
     height: 40px;
     cursor: pointer;
+
+      
+    &:hover{
+        transform: scale(1.1);
+    }
+
+
+
 }
 
 
@@ -128,7 +155,7 @@
     line-height: 22.5px;
     text-align: center;
     padding: 10px;
-    background-color: #28d9e6;
+    background-color: $c-primario;
     border: none;
     border-radius: 3px;
     position: absolute;
@@ -137,6 +164,12 @@
     width: 170px;
     height: 40px;
     cursor: pointer;
+
+   
+    &:hover{
+        transform: scale(1.1);
+    }
+
 }
 
 
@@ -210,7 +243,13 @@
             width: 170px;
             height: 40px;
             cursor: pointer;
-          }
+     
+           
+        &:hover{
+            transform: scale(1.1);
+        }
+     
+        }
     
           .main_button__buttonraciong {
             font-size: 0.8rem;
@@ -219,7 +258,14 @@
             width: 170px;
             height: 40px;
             cursor: pointer;
-          }
+         
+           
+        &:hover{
+            transform: scale(1.1);
+        }
+        
+        
+        }
      
           .main_button__buttonantip {
             font-size: 0.8rem;
@@ -228,7 +274,14 @@
             width: 170px;
             height: 40px;
             cursor: pointer;
-          }
+         
+            
+        &:hover{
+            transform: scale(1.1);
+        }
+        
+        
+        }
     
           .main_button__buttonaccesorios {
             font-size: 0.8rem;
@@ -237,7 +290,14 @@
             width: 170px;
             height: 40px;
             cursor: pointer;
-          }
+         
+        
+            
+        &:hover{
+            transform: scale(1.1);
+        }
+        
+        }
     
     
     
@@ -292,94 +352,117 @@
           "main aside1"
           "main aside2"
           "footer footer";
-    
-      }
 
-      .main_container img {
+    }
+
+    .main_container {
         display: flex;
-      
-      width: 100%;
-      }
-      
-      .main_container__p {
-        font-size: 2.5rem;
-        padding: 20px;
-      }
-      
-      .main_button__buttonracionp {
+       }
+
+.main_container img {
+    display: flex;  
+    width: 100%;
+  }
+  
+  .main_container__p {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+             
+  
+    .main_button__buttonracionp {
         font-size: 0.8rem;
         left: 100px;
         top: 560px;
         width: 300px;
         height: 50px;
         cursor: pointer;
-      }
-      
-      .main_button__buttonraciong {
-      
+
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    .main_button__buttonraciong {
+    
         font-size: 0.8rem;
         left: 450px;
         top: 560px;
         width: 300px;
         height: 50px;
         cursor: pointer;
-      }
+
       
-      .main_button__buttonantip {
+        &:hover{
+            transform: scale(1.1);
+        }
+
+    }
+    
+    .main_button__buttonantip {
         font-size: 0.8rem;
         left: 100px;
         top: 630px;
         width: 300px;
         height: 50px;
         cursor: pointer;
-      }
-      
-      .main_button__buttonaccesorios {
+
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    .main_button__buttonaccesorios {
         font-size: 0.8rem;
         left: 450px;
         top: 630px;
         width: 300px;
         height: 50px;
         cursor: pointer;
-      }
-      
-      
-      
-      .aside1_container img {
+
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    
+    
+    .aside1_container img {
         align-items: center;
-      
         margin-top: 50px;
-      
-      }
-      
-      .aside1_container p {
+    
+    }
+    
+    .aside1_container p {
         font-family: 'Architects Daughter', cursive;
         color: black;
         font-size: 1.5rem;
         text-align: center;
         padding: 10px;
-      }
-      
-      
-      .aside2_container img {
+    }
+    
+    
+    .aside2_container img {
         position: relative;
         align-items: center;
         margin-top: 50px;
-      
-      
-      
-      }
-      
-      .footer img {
+    
+    
+    
+    }
+    
+    .footer img {
         text-align: center;
         margin-left: 270px;
         margin-top: 30px;
         width: 80px;
         height: 80px;
-      
-      
-      }
-      
-
-
-}
+    
+    
+    }
+    
+    
+    }
