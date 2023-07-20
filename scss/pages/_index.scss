@@ -199,7 +199,7 @@
     margin-top: 30px;
     width: 30px;
     height: 30px;
-
+   
 
 }
 
@@ -222,24 +222,26 @@
 
       .main_container {
         display: flex;
+        width: 100%;
+        height: 100%;
        }
       
        .main_container img {
-        width: 65%;
-        padding: 50px;
+        height: 100%;
+        width: 70%;
      
        }
     
     
         .main_container__p {
-            font-size: 1.4rem;
-            padding: 60px;
+            font-size: 2rem;
+            padding: 20px;
         }
       
         .main_button__buttonracionp {
             font-size: 0.8rem;
-           left: 580px; left: 580px;
-            top: 50px;
+           left: 700px;
+           top: 70px;
             width: 170px;
             height: 40px;
             cursor: pointer;
@@ -253,8 +255,8 @@
     
           .main_button__buttonraciong {
             font-size: 0.8rem;
-            left: 580px;
-            top: 150px;
+            left: 700px;
+            top: 170px;
             width: 170px;
             height: 40px;
             cursor: pointer;
@@ -269,8 +271,8 @@
      
           .main_button__buttonantip {
             font-size: 0.8rem;
-            left: 580px;
-            top: 250px;
+            left: 700px;
+            top: 270px;
             width: 170px;
             height: 40px;
             cursor: pointer;
@@ -285,8 +287,8 @@
     
           .main_button__buttonaccesorios {
             font-size: 0.8rem;
-            left: 580px;
-            top: 350px;
+            left: 700px;
+            top: 370px;
             width: 170px;
             height: 40px;
             cursor: pointer;
@@ -327,11 +329,11 @@
         .footer img {
             margin-top: 40px;
               text-align: center;
-              margin-left: 150px;
+              margin-left: 180px;
               margin-bottom: 0;
               width: 50px;
               height: 50px;
-        
+            background: linear-gradient( to top, $c-primario, skyblue, white);
         
           }
 }
@@ -339,130 +341,153 @@
 
 
 @media(min-width: 1200px) {
-
     .container {
         width: 100%;
         height: 98vh;
         padding: 5px;
         display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 15% 35% 35% 15%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 50% 20% 15%;
         grid-template-areas:
           "header header"
-          "main aside1"
-          "main aside2"
+          "main main"
+          "aside1 aside2"
           "footer footer";
+    
+      }
+       
 
-    }
-
-    .main_container {
+      .main_container {
         display: flex;
+        width: 100%;
+        height: 100%;
        }
-
-.main_container img {
-    display: flex;  
-    width: 100%;
-  }
-  
-  .main_container__p {
-    font-size: 2.5rem;
-    padding: 20px;
-  }
-             
-  
-    .main_button__buttonracionp {
-        font-size: 0.8rem;
-        left: 100px;
-        top: 560px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-
-
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-    
-    .main_button__buttonraciong {
-    
-        font-size: 0.8rem;
-        left: 450px;
-        top: 560px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-
       
+       .main_container img {
+        width: 70%;
+       
+     
+       }
+    
+    
+        .main_container__p {
+            font-size: 2.2rem;
+            padding: 20px;
+        }
+      
+        .main_button__buttonracionp {
+            font-size: 0.8rem;
+           left: 980px; 
+            top: 70px;
+            width: 170px;
+            height: 40px;
+            cursor: pointer;
+     
+           
         &:hover{
             transform: scale(1.1);
         }
-
-    }
+     
+        }
     
-    .main_button__buttonantip {
-        font-size: 0.8rem;
-        left: 100px;
-        top: 630px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-
+          .main_button__buttonraciong {
+            font-size: 0.8rem;
+            left: 980px;
+            top: 170px;
+            width: 170px;
+            height: 40px;
+            cursor: pointer;
+         
+           
+        &:hover{
+            transform: scale(1.1);
+        }
         
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-    
-    .main_button__buttonaccesorios {
-        font-size: 0.8rem;
-        left: 450px;
-        top: 630px;
-        width: 300px;
-        height: 50px;
-        cursor: pointer;
-
         
+        }
+     
+          .main_button__buttonantip {
+            font-size: 0.8rem;
+            left: 980px;
+            top: 270px;
+            width: 170px;
+            height: 40px;
+            cursor: pointer;
+         
+            
         &:hover{
             transform: scale(1.1);
         }
-    }
+        
+        
+        }
+    
+          .main_button__buttonaccesorios {
+            font-size: 0.8rem;
+            left: 980px;
+            top: 370px;
+            width: 170px;
+            height: 40px;
+            cursor: pointer;
+         
+        
+            
+        &:hover{
+            transform: scale(1.1);
+        }
+        
+        }
     
     
     
-    .aside1_container img {
-        align-items: center;
-        margin-top: 50px;
+         .aside1_container {
+            display: flex;
+              width: 100%;
+            height: 100%;
+
+            & img{        
+           height: 100%;      
+           margin-left: 20px;
+           left: 10px;
+            }
+          
+         }
+      
+        .aside1_container p {
+            position: relative;
+            font-family: $ff-archi;
+            color:  rgb(13, 13, 121);
+            font-size: 1.5rem;
+         text-align: center;
+        top: 60px;
+       
+        }
     
-    }
-    
-    .aside1_container p {
-        font-family: 'Architects Daughter', cursive;
-        color: black;
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    
-    .aside2_container img {
-        position: relative;
-        align-items: center;
-        margin-top: 50px;
-    
-    
-    
-    }
-    
-    .footer img {
-        text-align: center;
-        margin-left: 270px;
-        margin-top: 30px;
-        width: 80px;
-        height: 80px;
-    
-    
-    }
-    
-    
-    }
+      
+         .aside2_container {
+            width: 100%;
+            height: 100%;
+            
+         
+         & img{
+            height: 100%;
+            margin-left: 20px;
+           
+        }
+         }
+
+
+        .footer img {
+            margin-top: 40px;
+              text-align: center;
+              margin-left: 280px;
+              margin-bottom: 0;
+              width: 50px;
+              height: 50px;
+         background: linear-gradient( to top, $c-primario, skyblue, white);
+        
+          }
+        }
+
+
+   

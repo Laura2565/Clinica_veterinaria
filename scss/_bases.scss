@@ -1,3 +1,7 @@
+$c-primario: #28d9e6;
+$ff-archi: 'Architects Daughter', cursive;
+$ff-bruno:'Bruno Ace', cursive;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +17,10 @@
 
 }
 
-
-$c-primario: #28d9e6;
-$c-secunadrio: white;
+ h2{
+  color: $c-primario;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+  font-family: $ff-archi;
+ }

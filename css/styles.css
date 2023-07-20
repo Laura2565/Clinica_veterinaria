@@ -9,6 +9,14 @@ img {
   width: 100%;
 }
 
+h2 {
+  color: #28d9e6;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Architects Daughter", cursive;
+}
+
 .buscar {
   color: black;
   border-radius: 5px;
@@ -39,7 +47,7 @@ img {
     background-color: white;
     width: 150px;
     margin-top: 8px;
-    left: 480px;
+    left: 520px;
     text-align: center;
     height: 20px;
     border: none;
@@ -47,7 +55,7 @@ img {
   .enviar {
     margin: 10px;
     position: relative;
-    left: 480px;
+    left: 520px;
     color: rgba(7, 6, 6, 0.432);
     border-radius: 5px;
     background-color: white;
@@ -161,7 +169,6 @@ img {
   }
 }
 .container_top-nav h1 {
-  text-shadow: 5px 5px 10px rgb(247, 245, 222);
   color: white;
   vertical-align: center;
   text-align: center;
@@ -170,7 +177,7 @@ img {
 }
 
 .container_top-nav img {
-  box-shadow: 5px 5px 20px white;
+  box-shadow: 3px 3px 20px white;
   width: 40px;
   height: 40px;
   position: relative;
@@ -197,6 +204,7 @@ img {
 }
 
 .menu > li {
+  font-family: "Bruno Ace", cursive;
   margin: 0 1rem;
   overflow: hidden;
 }
@@ -309,11 +317,14 @@ img {
     width: 50%;
     justify-content: space-between;
   }
+  .menu a:hover {
+    color: white;
+  }
   .menu-button-container {
     display: none;
   }
   .container_top-nav img {
-    box-shadow: 5px 5px 20px white;
+    box-shadow: 3px 3px 20px white;
     border-radius: 5px;
     height: 70px;
     width: 70px;
@@ -344,7 +355,7 @@ img {
     display: none;
   }
   .container_top-nav img {
-    box-shadow: 5px 5px 20px white;
+    box-shadow: 3px 3px 20px white;
     width: 110px;
     height: 110px;
     position: relative;
@@ -401,7 +412,7 @@ img {
 }
 
 .h4 {
-  font-family: "Bruno Ace", cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 1rem;
   color: #050000;
   text-align: center;
@@ -443,7 +454,7 @@ img {
   cursor: pointer;
 }
 
-.contacto h3 {
+.contacto h4 {
   margin-left: 20px;
   margin-top: 20px;
   color: #28d9e6;
@@ -464,7 +475,6 @@ img {
 
 .footercontacto {
   margin-top: 20px;
-  background-color: #28d9e6;
 }
 
 .footercontacto img {
@@ -476,7 +486,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .contacto h3 {
+  .contacto h4 {
     font-size: 1.8rem;
     margin-left: 20px;
     margin-top: 20px;
@@ -491,8 +501,8 @@ img {
     font-family: "Architects Daughter", cursive;
   }
   .footercontacto {
+    background: linear-gradient(to top, #28d9e6, skyblue, white);
     margin-top: 20px;
-    background-color: #28d9e6;
   }
   .footercontacto img {
     text-align: center;
@@ -503,7 +513,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .contacto h3 {
+  .contacto h4 {
     font-size: 1.8rem;
     margin-left: 20px;
     margin-top: 20px;
@@ -514,7 +524,7 @@ img {
     font-size: 1.6rem;
     margin-left: 20px;
     margin-top: 20px;
-    color: black;
+    color: rgb(13, 13, 121);
     font-family: "Architects Daughter", cursive;
   }
   .mapa {
@@ -522,8 +532,8 @@ img {
     margin-top: 20px;
   }
   .footercontacto {
+    background: linear-gradient(to top, #28d9e6, skyblue, white);
     margin-top: 20px;
-    background-color: #28d9e6;
   }
   .footercontacto img {
     text-align: center;
@@ -713,20 +723,21 @@ img {
   }
   .main_container {
     display: flex;
+    width: 100%;
+    height: 100%;
   }
   .main_container img {
-    width: 65%;
-    padding: 50px;
+    height: 100%;
+    width: 70%;
   }
   .main_container__p {
-    font-size: 1.4rem;
-    padding: 60px;
+    font-size: 2rem;
+    padding: 20px;
   }
   .main_button__buttonracionp {
     font-size: 0.8rem;
-    left: 580px;
-    left: 580px;
-    top: 50px;
+    left: 700px;
+    top: 70px;
     width: 170px;
     height: 40px;
     cursor: pointer;
@@ -736,8 +747,8 @@ img {
   }
   .main_button__buttonraciong {
     font-size: 0.8rem;
-    left: 580px;
-    top: 150px;
+    left: 700px;
+    top: 170px;
     width: 170px;
     height: 40px;
     cursor: pointer;
@@ -747,8 +758,8 @@ img {
   }
   .main_button__buttonantip {
     font-size: 0.8rem;
-    left: 580px;
-    top: 250px;
+    left: 700px;
+    top: 270px;
     width: 170px;
     height: 40px;
     cursor: pointer;
@@ -758,8 +769,8 @@ img {
   }
   .main_button__buttonaccesorios {
     font-size: 0.8rem;
-    left: 580px;
-    top: 350px;
+    left: 700px;
+    top: 370px;
     width: 170px;
     height: 40px;
     cursor: pointer;
@@ -785,10 +796,11 @@ img {
   .footer img {
     margin-top: 40px;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 0;
     width: 50px;
     height: 50px;
+    background: linear-gradient(to top, #28d9e6, skyblue, white);
   }
 }
 @media (min-width: 1200px) {
@@ -797,27 +809,28 @@ img {
     height: 98vh;
     padding: 5px;
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 15% 35% 35% 15%;
-    grid-template-areas: "header header" "main aside1" "main aside2" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 50% 20% 15%;
+    grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
   }
   .main_container {
     display: flex;
+    width: 100%;
+    height: 100%;
   }
   .main_container img {
-    display: flex;
-    width: 100%;
+    width: 70%;
   }
   .main_container__p {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 20px;
   }
   .main_button__buttonracionp {
     font-size: 0.8rem;
-    left: 100px;
-    top: 560px;
-    width: 300px;
-    height: 50px;
+    left: 980px;
+    top: 70px;
+    width: 170px;
+    height: 40px;
     cursor: pointer;
   }
   .main_button__buttonracionp:hover {
@@ -825,10 +838,10 @@ img {
   }
   .main_button__buttonraciong {
     font-size: 0.8rem;
-    left: 450px;
-    top: 560px;
-    width: 300px;
-    height: 50px;
+    left: 980px;
+    top: 170px;
+    width: 170px;
+    height: 40px;
     cursor: pointer;
   }
   .main_button__buttonraciong:hover {
@@ -836,10 +849,10 @@ img {
   }
   .main_button__buttonantip {
     font-size: 0.8rem;
-    left: 100px;
-    top: 630px;
-    width: 300px;
-    height: 50px;
+    left: 980px;
+    top: 270px;
+    width: 170px;
+    height: 40px;
     cursor: pointer;
   }
   .main_button__buttonantip:hover {
@@ -847,37 +860,49 @@ img {
   }
   .main_button__buttonaccesorios {
     font-size: 0.8rem;
-    left: 450px;
-    top: 630px;
-    width: 300px;
-    height: 50px;
+    left: 980px;
+    top: 370px;
+    width: 170px;
+    height: 40px;
     cursor: pointer;
   }
   .main_button__buttonaccesorios:hover {
     transform: scale(1.1);
   }
+  .aside1_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
   .aside1_container img {
-    align-items: center;
-    margin-top: 50px;
+    height: 100%;
+    margin-left: 20px;
+    left: 10px;
   }
   .aside1_container p {
+    position: relative;
     font-family: "Architects Daughter", cursive;
-    color: black;
+    color: rgb(13, 13, 121);
     font-size: 1.5rem;
     text-align: center;
-    padding: 10px;
+    top: 60px;
+  }
+  .aside2_container {
+    width: 100%;
+    height: 100%;
   }
   .aside2_container img {
-    position: relative;
-    align-items: center;
-    margin-top: 50px;
+    height: 100%;
+    margin-left: 20px;
   }
   .footer img {
+    margin-top: 40px;
     text-align: center;
-    margin-left: 270px;
-    margin-top: 30px;
-    width: 80px;
-    height: 80px;
+    margin-left: 280px;
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to top, #28d9e6, skyblue, white);
   }
 }
 .mainservicios h3 {
@@ -887,7 +912,6 @@ img {
 }
 
 .mainservicios p {
-  text-align: center;
   font-size: 1rem;
   font-family: "Architects Daughter", cursive;
 }
@@ -897,6 +921,7 @@ img {
 }
 
 .footerservicios {
+  background: linear-gradient(to top, #28d9e6, skyblue, white);
   width: 100%;
   margin-bottom: 0;
   margin-top: 20px;
@@ -912,19 +937,39 @@ img {
 }
 
 @media (min-width: 1200px) {
+  @keyframes animacionh3 {
+    0% {
+      color: #28d9e6;
+    }
+    50% {
+      color: #28d9e6;
+      transform: translate(100px);
+    }
+    100% {
+      color: #28d9e6;
+      transform: translate(200px);
+    }
+  }
+  h3 {
+    animation-name: animacionh3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
   .mainservicios h3 {
-    padding: 50px;
-    font-size: 2rem;
+    padding: 30px;
+    font-size: 2.5rem;
     font-family: "Architects Daughter", cursive;
   }
   .mainservicios p {
-    margin: 50px;
-    text-align: center;
-    font-size: 1.8rem;
-    font-family: "Architects Daughter", cursive;
+    color: rgb(13, 13, 121);
+    margin: 20px;
+    font-size: 1.5rem;
+    font-family: "Bruno Ace", cursive;
   }
   .mainservicios img {
-    padding: 100px;
+    margin-left: 350px;
+    width: 400px;
+    height: auto;
   }
 }
 

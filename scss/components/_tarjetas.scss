@@ -63,7 +63,7 @@
       
       
       .h4 {
-        font-family: 'Bruno Ace', cursive;
+        font-family: $ff-archi;
         font-size: 1rem;
         color: #050000;
         text-align: center;
@@ -71,7 +71,7 @@
       }
       
       .cardp {
-        font-family: 'Bruno Ace', cursive;
+        font-family: $ff-bruno;
         font-size: 16px;
         color: #050000;
         text-align: center;
@@ -98,7 +98,7 @@
       .comprar {
         background-color: white;
         color: $c-primario;
-        font-family: 'Bruno Ace', cursive;
+        font-family: $ff-bruno;
         font-size: 10px;
         font-weight: 500;
         border: none;
