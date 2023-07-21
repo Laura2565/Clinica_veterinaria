@@ -5,112 +5,102 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 50% 30% 10%;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "aside1 aside2"
-    "footer footer";
-  
-  }
-   
-  .header {
-      background-color: $c-primario;
-      grid-area: header;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "aside1 aside2"
+        "footer footer";
 
-  }
+}
 
-  .main {
-      background-color: #d0f8f8;
-      grid-area: main;
-  }
+.header {
+    background-color: $c-primario;
+    grid-area: header;
 
-  .aside1 {
-      background-color: rgb(253, 236, 159);
-      grid-area: aside1;
-  }
+}
 
-  .aside2 {
-      background-color: rgb(253, 236, 159);
-      grid-area: aside2;
-  }
+.main {
+    background-color: #d0f8f8;
+    grid-area: main;
+}
 
-  .footer {
-      background: linear-gradient( to top, $c-primario, skyblue, white);
-      grid-area: footer;
-      margin-bottom: 0;
-  }
+.aside1 {
+    background-color: white;
+    grid-area: aside1;
+}
+
+.aside2 {
+    background-color: white;
+    grid-area: aside2;
+}
+
+.footer {
+    background: linear-gradient(to top, $c-primario, white, skyblue, $c-primario);
+    grid-area: footer;
+    margin-bottom: 0;
+}
 
 
-  .main_container {
+.main_container {
     display: flex;
     position: relative;
     width: 100%;
+
+
+    & img {
+        position: absolute;
+    
+    }
 }
 
 .main_container__p {
     font-family: 'Architects Daughter', cursive;
-    color: rgb(252, 251, 251);
+    color:  rgb(13, 13, 121);
     position: relative;
-    font-size: 1rem;
+    font-size: 0.8rem;
     left: 15px;
     top: 15px;
 
-  }
-
-.main_container img {
-    position: absolute;
-
 }
 
-.main_button__buttonracionp {
-    font-family: 'Architects Daughter', cursive;
+.main_button{
+    font-family: $ff-archi;
     color: #FFFFFF;
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 22.5px;
     text-align: center;
     padding: 10px;
-    background-color: $c-primario;
     border: none;
     border-radius: 3px;
     position: absolute;
+    cursor: pointer;
+
+}
+
+.buttonracionp {
+    @extend .main_button;
+    background-color: $c-primario;
     left: 15px;
     top: 320px;
     width: 170px;
     height: 40px;
-    cursor: pointer;
-      
-
-
-    
-    &:hover{
+    &:hover {
         transform: scale(1.1);
     }
-   
+
+    
 }
 
 
-.main_button__buttonraciong {
-    font-family: 'Architects Daughter', cursive;
-    color: #FFFFFF;
-    font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 22.5px;
-    text-align: center;
-    padding: 10px;
-    background-color: $c-primario;
-    border: none;
-    border-radius: 3px;
-    position: absolute;
+.buttonraciong {
+   @extend .main_button;
+   background-color: $c-primario;
     left: 200px;
     top: 320px;
     width: 170px;
     height: 40px;
-    cursor: pointer;
-   
-
-    
-    &:hover{
+    &:hover {
         transform: scale(1.1);
     }
 
@@ -119,54 +109,31 @@
 
 
 
-.main_button__buttonantip {
-
-    font-family: 'Architects Daughter', cursive;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 22.5px;
-    text-align: center;
-    padding: 10px;
+.buttonantip {
+    @extend .main_button;
     background-color: $c-primario;
-    border: none;
-    border-radius: 3px;
-    position: absolute;
     left: 15px;
     top: 380px;
     width: 170px;
     height: 40px;
-    cursor: pointer;
 
-      
-    &:hover{
+    &:hover {
         transform: scale(1.1);
     }
-
-
 
 }
 
 
-.main_button__buttonaccesorios {
-    font-family: 'Architects Daughter', cursive;
-    color: #FFFFFF;
-    font-size: 0.8rem;
-    line-height: 22.5px;
-    text-align: center;
-    padding: 10px;
+.buttonaccesorios {
+    @extend .main_button;
     background-color: $c-primario;
-    border: none;
-    border-radius: 3px;
-    position: absolute;
     left: 200px;
     top: 380px;
     width: 170px;
     height: 40px;
-    cursor: pointer;
 
-   
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
 
@@ -175,7 +142,7 @@
 
 /*aside mobile*/
 .aside1_container img {
-    position: relative;     
+    position: relative;
     padding: 5px;
 
 }
@@ -194,16 +161,8 @@
     padding: 5px;
 }
 
-.footer  img {
-    margin-left: 70px;
-    margin-top: 30px;
-    width: 30px;
-    height: 30px;
-   
 
-}
-
-@media(min-width: 768px){
+@media(min-width: 768px) {
     .container {
         width: 100%;
         height: 98vh;
@@ -212,130 +171,118 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 15% 50% 20% 15%;
         grid-template-areas:
-          "header header"
-          "main main"
-          "aside1 aside2"
-          "footer footer";
-    
-      }
-       
+            "header header"
+            "main main"
+            "aside1 aside2"
+            "footer footer";
 
-      .main_container {
+    }
+
+
+    .main_container {
         display: flex;
         width: 100%;
         height: 100%;
-       }
-      
-       .main_container img {
+    & img {
         height: 100%;
         width: 70%;
-     
-       }
-    
-    
-        .main_container__p {
-            font-size: 2rem;
-            padding: 20px;
-        }
-      
-        .main_button__buttonracionp {
-            font-size: 0.8rem;
-           left: 700px;
-           top: 70px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-     
-           
-        &:hover{
-            transform: scale(1.1);
-        }
-     
-        }
-    
-          .main_button__buttonraciong {
-            font-size: 0.8rem;
-            left: 700px;
-            top: 170px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-         
-           
-        &:hover{
-            transform: scale(1.1);
-        }
-        
-        
-        }
-     
-          .main_button__buttonantip {
-            font-size: 0.8rem;
-            left: 700px;
-            top: 270px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-         
-            
-        &:hover{
-            transform: scale(1.1);
-        }
-        
-        
-        }
-    
-          .main_button__buttonaccesorios {
-            font-size: 0.8rem;
-            left: 700px;
-            top: 370px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-         
-        
-            
-        &:hover{
-            transform: scale(1.1);
-        }
-        
-        }
-    
-    
-    
-         .aside1_container img{        
-           width: 40%;      
-           margin-left: 120px;
-          
-          
-         }
-      
-        .aside1_container p {
-            font-family: 'Architects Daughter', cursive;
-            color: black;
-            font-size: 1rem;
-            text-align: center;
-            padding: 5px;
-        }
-      
-      
-         .aside2_container img{
-            width: 40%;
-            margin-left: 120px;
-        }
-    
+
+    }
+
+    }
+    .main_container__p {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
 
 
-        .footer img {
-            margin-top: 40px;
-              text-align: center;
-              margin-left: 180px;
-              margin-bottom: 0;
-              width: 50px;
-              height: 50px;
-            background: linear-gradient( to top, $c-primario, skyblue, white);
-        
-          }
+    .main_button{
+        font-family: $ff-archi;
+        color: #FFFFFF;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 22.5px;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;      
+        left: 350px;
+        position: absolute;
+        cursor: pointer;
+    
+    }
+
+    .buttonracionp {
+     @extend .main_button;    
+        top: 80px;
+        width: 180px;
+        height: 50px;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+    .buttonraciong {
+        @extend .main_button;
+         top: 180px;
+         width: 180px;
+         height: 50px;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+    }
+
+    .buttonantip {
+        @extend .main_button;     
+        top: 280px;
+        width: 180px;
+        height: 50px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+    }
+
+    .buttonaccesorios {
+        @extend .main_button;
+        top: 380px;
+        width: 180px;
+        height: 50px;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+
+
+    .aside1_container img {
+        width: 40%;
+        margin-left: 120px;
+
+
+    }
+
+    .aside1_container p {
+        font-family: 'Architects Daughter', cursive;
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px;
+    }
+
+
+    .aside2_container img {
+        width: 40%;
+        margin-left: 120px;
+    }
+
+ 
 }
 
 
@@ -349,145 +296,135 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 15% 50% 20% 15%;
         grid-template-areas:
-          "header header"
-          "main main"
-          "aside1 aside2"
-          "footer footer";
-    
-      }
-       
+            "header header"
+            "main main"
+            "aside1 aside2"
+            "footer footer";
 
-      .main_container {
+    }
+
+
+   .main_container {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+
+    & img {
+        position: absolute;
+    
+    }
+}
+
+
+    .main_container__p {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+
+
+    .buttonracionp {
+        font-size: 1rem;
+        left: 700px;
+        top: 70px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+    .buttonraciong {
+        font-size: 1rem;
+        left: 700px;
+        top: 170px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+    }
+
+    .buttonantip {
+        font-size: 1rem;
+        left: 700px;
+        top: 270px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+    }
+
+    .buttonaccesorios {
+        font-size: 1rem;
+        left: 700px;
+        top: 370px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+
+
+    .aside1_container {
         display: flex;
         width: 100%;
         height: 100%;
-       }
-      
-       .main_container img {
-        width: 70%;
-       
-     
-       }
-    
-    
-        .main_container__p {
-            font-size: 2.2rem;
-            padding: 20px;
-        }
-      
-        .main_button__buttonracionp {
-            font-size: 0.8rem;
-           left: 980px; 
-            top: 70px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-     
-           
-        &:hover{
-            transform: scale(1.1);
-        }
-     
-        }
-    
-          .main_button__buttonraciong {
-            font-size: 0.8rem;
-            left: 980px;
-            top: 170px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-         
-           
-        &:hover{
-            transform: scale(1.1);
-        }
-        
-        
-        }
-     
-          .main_button__buttonantip {
-            font-size: 0.8rem;
-            left: 980px;
-            top: 270px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-         
-            
-        &:hover{
-            transform: scale(1.1);
-        }
-        
-        
-        }
-    
-          .main_button__buttonaccesorios {
-            font-size: 0.8rem;
-            left: 980px;
-            top: 370px;
-            width: 170px;
-            height: 40px;
-            cursor: pointer;
-         
-        
-            
-        &:hover{
-            transform: scale(1.1);
-        }
-        
-        }
-    
-    
-    
-         .aside1_container {
-            display: flex;
-              width: 100%;
-            height: 100%;
 
-            & img{        
-           height: 100%;      
-           margin-left: 20px;
-           left: 10px;
-            }
-          
-         }
-      
-        .aside1_container p {
-            position: relative;
-            font-family: $ff-archi;
-            color:  rgb(13, 13, 121);
-            font-size: 1.5rem;
-         text-align: center;
-        top: 60px;
-       
-        }
-    
-      
-         .aside2_container {
-            width: 100%;
-            height: 100%;
-            
-         
-         & img{
+        & img {
             height: 100%;
             margin-left: 20px;
-           
+            left: 10px;
         }
-         }
+
+    }
+
+    .aside1_container p {
+        position: relative;
+        font-family: $ff-archi;
+        color: rgb(13, 13, 121);
+        font-size: 1.5rem;
+        text-align: center;
+        top: 40px;
+
+    }
 
 
-        .footer img {
-            margin-top: 40px;
-              text-align: center;
-              margin-left: 280px;
-              margin-bottom: 0;
-              width: 50px;
-              height: 50px;
-         background: linear-gradient( to top, $c-primario, skyblue, white);
+    .aside2_container {
+        width: 100%;
+        height: 100%;
+
+
+        & img {
+            height: 100%;
+            margin-left: 20px;
+
+        }
+    }
+
+
         
-          }
-        }
+    
+}
 
 
    

@@ -23,14 +23,13 @@
 
 @media(min-width: 768px){
     .buscar {
-        position: relative;
+        @include position-center;
         color: black;
         border-radius: 5px;
         background-color: white;
         width: 150px;
         margin-top: 8px;
-        left: 520px;
-        text-align: center;
+        left: 520px;      
         height: 20px;
         border: none;
     }
@@ -54,14 +53,13 @@
 
 
     .buscar {
-        position: relative;
+       @include position-center;
         color: black;
         border-radius: 5px;
         background-color: white;
         width: 190px;
         margin-top: 50px;
         left: 810px;
-        text-align: center;
         height: 30px;
         border: none;
       }

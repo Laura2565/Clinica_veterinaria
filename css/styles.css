@@ -42,13 +42,13 @@ h2 {
 @media (min-width: 768px) {
   .buscar {
     position: relative;
+    text-align: center;
     color: black;
     border-radius: 5px;
     background-color: white;
     width: 150px;
     margin-top: 8px;
     left: 520px;
-    text-align: center;
     height: 20px;
     border: none;
   }
@@ -67,13 +67,13 @@ h2 {
 @media (min-width: 1200px) {
   .buscar {
     position: relative;
+    text-align: center;
     color: black;
     border-radius: 5px;
     background-color: white;
     width: 190px;
     margin-top: 50px;
     left: 810px;
-    text-align: center;
     height: 30px;
     border: none;
   }
@@ -149,7 +149,8 @@ h2 {
     margin-left: 650px;
     background-color: #edfafd;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     height: 40px;
     width: 500px;
     border-radius: 10px;
@@ -334,10 +335,10 @@ h2 {
 }
 @media (min-width: 1200px) {
   .container_top-nav h1 {
+    position: relative;
     text-align: center;
     font-family: "Architects Daughter", cursive;
     font-size: 3.5rem;
-    position: relative;
     top: 20px;
   }
   .menu-button-container {
@@ -396,19 +397,19 @@ h2 {
 }
 
 .containerimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .img {
   display: flex;
-  width: 50%;
-  object-fit: cover;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  object-fit: cover;
 }
 
 .h4 {
@@ -428,13 +429,13 @@ h2 {
 }
 
 .footercomprar {
-  background-color: #28d9e6;
-  border-radius: 0 0 15px 15px;
   display: flex;
-  width: 100%;
-  height: 50px;
   justify-content: center;
   align-items: center;
+  background-color: #28d9e6;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  height: 50px;
   margin-top: 8px;
   margin-bottom: 0px;
 }
@@ -454,6 +455,39 @@ h2 {
   cursor: pointer;
 }
 
+.footer img {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background: linear-gradient(to top, #28d9e6, white, skyblue, #28d9e6);
+  }
+  .footer img {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 140px;
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    background: linear-gradient(to top, #28d9e6, white, skyblue, #28d9e6);
+  }
+  .footer img {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
 .contacto h4 {
   margin-left: 20px;
   margin-top: 20px;
@@ -473,18 +507,6 @@ h2 {
   margin-top: 20px;
 }
 
-.footercontacto {
-  margin-top: 20px;
-}
-
-.footercontacto img {
-  text-align: center;
-  margin-left: 100px;
-  margin-top: 10px;
-  width: 40px;
-  height: 40px;
-}
-
 @media (min-width: 768px) {
   .contacto h4 {
     font-size: 1.8rem;
@@ -499,17 +521,6 @@ h2 {
     margin-top: 20px;
     color: black;
     font-family: "Architects Daughter", cursive;
-  }
-  .footercontacto {
-    background: linear-gradient(to top, #28d9e6, skyblue, white);
-    margin-top: 20px;
-  }
-  .footercontacto img {
-    text-align: center;
-    margin-left: 150px;
-    margin-top: 10px;
-    width: 50px;
-    height: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -529,18 +540,7 @@ h2 {
   }
   .mapa {
     position: absolute;
-    margin-top: 20px;
-  }
-  .footercontacto {
-    background: linear-gradient(to top, #28d9e6, skyblue, white);
-    margin-top: 20px;
-  }
-  .footercontacto img {
-    text-align: center;
-    margin-left: 270px;
-    margin-top: 10px;
-    width: 70px;
-    height: 70px;
+    margin: 5px;
   }
 }
 .container {
@@ -564,17 +564,17 @@ h2 {
 }
 
 .aside1 {
-  background-color: rgb(253, 236, 159);
+  background-color: white;
   grid-area: aside1;
 }
 
 .aside2 {
-  background-color: rgb(253, 236, 159);
+  background-color: white;
   grid-area: aside2;
 }
 
 .footer {
-  background: linear-gradient(to top, #28d9e6, skyblue, white);
+  background: linear-gradient(to top, #28d9e6, white, skyblue, #28d9e6);
   grid-area: footer;
   margin-bottom: 0;
 }
@@ -584,21 +584,20 @@ h2 {
   position: relative;
   width: 100%;
 }
-
-.main_container__p {
-  font-family: "Architects Daughter", cursive;
-  color: rgb(252, 251, 251);
-  position: relative;
-  font-size: 1rem;
-  left: 15px;
-  top: 15px;
-}
-
 .main_container img {
   position: absolute;
 }
 
-.main_button__buttonracionp {
+.main_container__p {
+  font-family: "Architects Daughter", cursive;
+  color: rgb(13, 13, 121);
+  position: relative;
+  font-size: 0.8rem;
+  left: 15px;
+  top: 15px;
+}
+
+.main_button, .buttonaccesorios, .buttonantip, .buttonraciong, .buttonracionp {
   font-family: "Architects Daughter", cursive;
   color: #FFFFFF;
   font-size: 0.8rem;
@@ -606,82 +605,53 @@ h2 {
   line-height: 22.5px;
   text-align: center;
   padding: 10px;
-  background-color: #28d9e6;
   border: none;
   border-radius: 3px;
   position: absolute;
+  cursor: pointer;
+}
+
+.buttonracionp {
+  background-color: #28d9e6;
   left: 15px;
   top: 320px;
   width: 170px;
   height: 40px;
-  cursor: pointer;
 }
-.main_button__buttonracionp:hover {
+.buttonracionp:hover {
   transform: scale(1.1);
 }
 
-.main_button__buttonraciong {
-  font-family: "Architects Daughter", cursive;
-  color: #FFFFFF;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 22.5px;
-  text-align: center;
-  padding: 10px;
+.buttonraciong {
   background-color: #28d9e6;
-  border: none;
-  border-radius: 3px;
-  position: absolute;
   left: 200px;
   top: 320px;
   width: 170px;
   height: 40px;
-  cursor: pointer;
 }
-.main_button__buttonraciong:hover {
+.buttonraciong:hover {
   transform: scale(1.1);
 }
 
-.main_button__buttonantip {
-  font-family: "Architects Daughter", cursive;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 22.5px;
-  text-align: center;
-  padding: 10px;
+.buttonantip {
   background-color: #28d9e6;
-  border: none;
-  border-radius: 3px;
-  position: absolute;
   left: 15px;
   top: 380px;
   width: 170px;
   height: 40px;
-  cursor: pointer;
 }
-.main_button__buttonantip:hover {
+.buttonantip:hover {
   transform: scale(1.1);
 }
 
-.main_button__buttonaccesorios {
-  font-family: "Architects Daughter", cursive;
-  color: #FFFFFF;
-  font-size: 0.8rem;
-  line-height: 22.5px;
-  text-align: center;
-  padding: 10px;
+.buttonaccesorios {
   background-color: #28d9e6;
-  border: none;
-  border-radius: 3px;
-  position: absolute;
   left: 200px;
   top: 380px;
   width: 170px;
   height: 40px;
-  cursor: pointer;
 }
-.main_button__buttonaccesorios:hover {
+.buttonaccesorios:hover {
   transform: scale(1.1);
 }
 
@@ -704,13 +674,6 @@ h2 {
   padding: 5px;
 }
 
-.footer img {
-  margin-left: 70px;
-  margin-top: 30px;
-  width: 30px;
-  height: 30px;
-}
-
 @media (min-width: 768px) {
   .container {
     width: 100%;
@@ -731,51 +694,53 @@ h2 {
     width: 70%;
   }
   .main_container__p {
-    font-size: 2rem;
-    padding: 20px;
+    font-size: 1.6rem;
+    padding: 10px;
   }
-  .main_button__buttonracionp {
-    font-size: 0.8rem;
-    left: 700px;
-    top: 70px;
-    width: 170px;
-    height: 40px;
+  .main_button, .buttonracionp, .buttonraciong, .buttonantip, .buttonaccesorios {
+    font-family: "Architects Daughter", cursive;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 22.5px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    left: 350px;
+    position: absolute;
     cursor: pointer;
   }
-  .main_button__buttonracionp:hover {
+  .buttonracionp {
+    top: 80px;
+    width: 180px;
+    height: 50px;
+  }
+  .buttonracionp:hover {
     transform: scale(1.1);
   }
-  .main_button__buttonraciong {
-    font-size: 0.8rem;
-    left: 700px;
-    top: 170px;
-    width: 170px;
-    height: 40px;
-    cursor: pointer;
+  .buttonraciong {
+    top: 180px;
+    width: 180px;
+    height: 50px;
   }
-  .main_button__buttonraciong:hover {
+  .buttonraciong:hover {
     transform: scale(1.1);
   }
-  .main_button__buttonantip {
-    font-size: 0.8rem;
-    left: 700px;
-    top: 270px;
-    width: 170px;
-    height: 40px;
-    cursor: pointer;
+  .buttonantip {
+    top: 280px;
+    width: 180px;
+    height: 50px;
   }
-  .main_button__buttonantip:hover {
+  .buttonantip:hover {
     transform: scale(1.1);
   }
-  .main_button__buttonaccesorios {
-    font-size: 0.8rem;
-    left: 700px;
-    top: 370px;
-    width: 170px;
-    height: 40px;
-    cursor: pointer;
+  .buttonaccesorios {
+    top: 380px;
+    width: 180px;
+    height: 50px;
   }
-  .main_button__buttonaccesorios:hover {
+  .buttonaccesorios:hover {
     transform: scale(1.1);
   }
   .aside1_container img {
@@ -793,15 +758,6 @@ h2 {
     width: 40%;
     margin-left: 120px;
   }
-  .footer img {
-    margin-top: 40px;
-    text-align: center;
-    margin-left: 180px;
-    margin-bottom: 0;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(to top, #28d9e6, skyblue, white);
-  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -815,58 +771,58 @@ h2 {
   }
   .main_container {
     display: flex;
+    position: relative;
     width: 100%;
-    height: 100%;
   }
   .main_container img {
-    width: 70%;
+    position: absolute;
   }
   .main_container__p {
-    font-size: 2.2rem;
-    padding: 20px;
+    font-size: 2rem;
+    padding: 10px;
   }
-  .main_button__buttonracionp {
-    font-size: 0.8rem;
-    left: 980px;
+  .buttonracionp {
+    font-size: 1rem;
+    left: 700px;
     top: 70px;
-    width: 170px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
   }
-  .main_button__buttonracionp:hover {
+  .buttonracionp:hover {
     transform: scale(1.1);
   }
-  .main_button__buttonraciong {
-    font-size: 0.8rem;
-    left: 980px;
+  .buttonraciong {
+    font-size: 1rem;
+    left: 700px;
     top: 170px;
-    width: 170px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
   }
-  .main_button__buttonraciong:hover {
+  .buttonraciong:hover {
     transform: scale(1.1);
   }
-  .main_button__buttonantip {
-    font-size: 0.8rem;
-    left: 980px;
+  .buttonantip {
+    font-size: 1rem;
+    left: 700px;
     top: 270px;
-    width: 170px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
   }
-  .main_button__buttonantip:hover {
+  .buttonantip:hover {
     transform: scale(1.1);
   }
-  .main_button__buttonaccesorios {
-    font-size: 0.8rem;
-    left: 980px;
+  .buttonaccesorios {
+    font-size: 1rem;
+    left: 700px;
     top: 370px;
-    width: 170px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
   }
-  .main_button__buttonaccesorios:hover {
+  .buttonaccesorios:hover {
     transform: scale(1.1);
   }
   .aside1_container {
@@ -885,7 +841,7 @@ h2 {
     color: rgb(13, 13, 121);
     font-size: 1.5rem;
     text-align: center;
-    top: 60px;
+    top: 40px;
   }
   .aside2_container {
     width: 100%;
@@ -895,55 +851,42 @@ h2 {
     height: 100%;
     margin-left: 20px;
   }
-  .footer img {
-    margin-top: 40px;
-    text-align: center;
-    margin-left: 280px;
-    margin-bottom: 0;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(to top, #28d9e6, skyblue, white);
-  }
 }
 .mainservicios h3 {
+  color: #28d9e6;
   padding: 5px;
   font-size: 1.2rem;
   font-family: "Architects Daughter", cursive;
 }
 
 .mainservicios p {
+  color: rgb(13, 13, 121);
+  margin: 10px;
   font-size: 1rem;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Bruno Ace", cursive;
 }
 
 .mainservicios img {
   padding: 10px;
+  width: 280px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 15px rgb(240, 224, 194);
+  height: auto;
 }
 
-.footerservicios {
-  background: linear-gradient(to top, #28d9e6, skyblue, white);
-  width: 100%;
-  margin-bottom: 0;
-  margin-top: 20px;
-  background-color: #28d9e6;
+@media (min-width: 768px) {
+  .mainservicios img {
+    padding: 10px;
+    width: 400px;
+    margin-left: 250px;
+    box-shadow: 10px 10px 15px rgb(240, 224, 194);
+    height: auto;
+  }
 }
-
-.footerservicios img {
-  text-align: center;
-  margin-left: 70px;
-  margin-top: 10px;
-  width: 40px;
-  height: 40px;
-}
-
 @media (min-width: 1200px) {
   @keyframes animacionh3 {
     0% {
       color: #28d9e6;
-    }
-    50% {
-      color: #28d9e6;
-      transform: translate(100px);
     }
     100% {
       color: #28d9e6;
@@ -952,7 +895,7 @@ h2 {
   }
   h3 {
     animation-name: animacionh3;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
   }
   .mainservicios h3 {
@@ -967,9 +910,10 @@ h2 {
     font-family: "Bruno Ace", cursive;
   }
   .mainservicios img {
-    margin-left: 350px;
-    width: 400px;
+    margin-left: 450px;
+    width: 500px;
     height: auto;
+    box-shadow: 10px 10px 15px rgb(240, 224, 194);
   }
 }
 

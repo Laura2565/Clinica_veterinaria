@@ -1,81 +1,79 @@
-.mainservicios h3 { 
-    padding: 5px;
-    font-size: 1.2rem;
-    font-family: 'Architects Daughter', cursive;
- }
+.mainservicios h3 {
+  color: $c-primario;
+  padding: 5px;
+  font-size: 1.2rem;
+  font-family: $ff-archi;
+}
 
- .mainservicios p { 
-    font-size: 1rem;
-    font-family: 'Architects Daughter', cursive;
- }
+.mainservicios p {
+  color:  rgb(13, 13, 121);
+  margin: 10px;
+  font-size: 1rem;
+  font-family: $ff-bruno;
+}
+
+.mainservicios img {
+  padding: 10px;
+  width: 280px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 15px rgb(240, 224, 194);
+  height: auto;
+}
 
 
- .mainservicios img{
-      padding: 10px;
- }
+@media(min-width: 768px) {
+
+.mainservicios img {
+  padding: 10px;
+  width: 400px;
+  margin-left: 250px;
+  box-shadow: 10px 10px 15px rgb(240, 224, 194);
+  height: auto;
+}
+}
 
 
- .footerservicios{
-  background: linear-gradient( to top, $c-primario, skyblue, white);
-    width: 100%;
-    margin-bottom: 0;
-    margin-top: 20px;
-    background-color: #28d9e6;
-  }
-  .footerservicios img{ 
-        text-align: center;
-        margin-left: 70px;
-        margin-top: 10px;
-        width: 40px;
-        height: 40px;
-  
 
-  }
-
- 
-  
 @media(min-width: 1200px) {
 
   @keyframes animacionh3 {
     0% {
-        color: $c-primario;
+      color: $c-primario;
     }
-    50% {
-        color: $c-primario;
-        transform: translate(100px);
-    }
-    100%{
-        color: $c-primario;
-        transform: translate(200px);
-    }
-        }
 
-    h3{
-            animation-name: animacionh3;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-         
-            }
+     100% {
+      color: $c-primario;
+      transform: translate(200px);
+    }
+  }
 
-    .mainservicios h3 {
-       padding: 30px;     
-        font-size: 2.5rem;
-        font-family: 'Architects Daughter', cursive;
-      }
-      
-      .mainservicios p {
-        color: rgb(13, 13, 121);
-        margin: 20px;
-        font-size: 1.5rem;
-        font-family: $ff-bruno;
-      }
-      
-      
-      .mainservicios img {
-        margin-left: 350px;
-        width: 400px;
-        height: auto;
-      }
+  h3 {
+    animation-name: animacionh3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .mainservicios h3 {
+    padding: 30px;
+    font-size: 2.5rem;
+    font-family: $ff-archi;
+  }
+
+  .mainservicios p {
+    color: rgb(13, 13, 121);
+    margin: 20px;
+    font-size: 1.5rem;
+    font-family: $ff-bruno;
+  }
+
+
+  .mainservicios img {
+    margin-left: 450px;
+    width: 500px;
+    height: auto;
+    box-shadow: 10px 10px 15px rgb(240, 224, 194);
+    }
 
 
 }

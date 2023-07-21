@@ -196,13 +196,11 @@
   
 @media(min-width: 1200px) {
 
-   
-
+    
     .container_top-nav h1 {
-        text-align: center;
+       @include  position-center;
         font-family: $ff-archi;
-        font-size: 3.5rem;
-        position: relative;
+        font-size: 3.5rem;        
         top: 20px;
    
     }
@@ -210,9 +208,11 @@
     
     .menu-button-container {
         display: flex;
+       
       }
     
       .menu {
+       
         font-size: 1.4rem;
         position: absolute;
         margin-top: 190px;
@@ -224,6 +224,7 @@
     
       .menu-button-container {
         display: none;
+       
       }
     
     
