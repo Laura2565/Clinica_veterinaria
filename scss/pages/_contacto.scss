@@ -14,10 +14,8 @@
 
 .mapa {
   display: flex;
-  margin-top: 20px;
-
+  margin: 20px;
 }
-
 
 
 @media(min-width: 768px) {
@@ -38,15 +36,24 @@
     font-family: $ff-archi;
   }
 
+  .mapa {
+    margin: 50px;
+}
+
+
 }
 
 
 
 @media(min-width: 1200px) {
-
+.maincontacto_container{
+  width: 100%;
+  height: 100%;
+ display: flex; 
+justify-content: center;
+}
   .contacto h4 {
     font-size: 1.8rem;
-    margin-left: 20px;
     margin-top: 20px;
     color: $c-primario;
     font-family: $ff-archi;
@@ -54,7 +61,6 @@
 
   .contacto p {
     font-size: 1.6rem;
-    margin-left: 20px;
     margin-top: 20px;
     color: rgb(13, 13, 121);
     font-family: $ff-archi;
@@ -63,9 +69,7 @@
 
 
   .mapa {
-    position: absolute;
-    margin: 5px;
-
+      margin: 50px;
   }
 
 }

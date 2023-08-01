@@ -22,22 +22,23 @@
 
 
 @media(min-width: 768px){
+    
     .buscar {
         @include position-center;
         color: black;
         border-radius: 5px;
         background-color: white;
         width: 150px;
-        margin-top: 8px;
-        left: 520px;      
+        margin-top: 48px;
+        margin-left: 70%;      
         height: 20px;
         border: none;
+        justify-content: center;
     }
     
     .enviar {
         margin: 10px;
         position: relative;
-        left: 520px;
         color: rgba(7, 6, 6, 0.432);
         border-radius: 5px;
         background-color: white;
@@ -49,32 +50,33 @@
 }
 
 
+
 @media(min-width: 1200px) {
 
 
     .buscar {
-       @include position-center;
+        @include position-center;
         color: black;
         border-radius: 5px;
         background-color: white;
-        width: 190px;
-        margin-top: 50px;
-        left: 810px;
+        width: 230px;
+        margin-top: 55px;
+        margin-left: 70%;      
         height: 30px;
         border: none;
-      }
+        justify-content: center;
+    }
     
-      .enviar {
+    .enviar {
         margin: 10px;
         position: relative;
-        left: 810px;
         color: rgba(7, 6, 6, 0.432);
         border-radius: 5px;
         background-color: white;
         border: none;
-        width: 70px;
+        width: 90px;
         height: 30px;
-      }
+    }
     
     
 
