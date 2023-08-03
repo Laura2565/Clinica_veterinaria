@@ -1,13 +1,13 @@
 .mainservicios h3 {
   color: $c-primario;
-  padding: 5px;
+ margin: 30px;
   font-size: 1.2rem;
   font-family: $ff-archi;
 }
 
 .mainservicios p {
   color:  rgb(13, 13, 121);
-  margin: 10px;
+  margin: 30px;
   font-size: 1rem;
   font-family: $ff-bruno;
 }
@@ -25,12 +25,21 @@
 @media(min-width: 768px) {
 
 .mainservicios img {
-  padding: 10px;
   width: 400px;
   margin-left: 250px;
   box-shadow: 10px 10px 15px rgb(240, 224, 194);
   height: auto;
 }
+
+.mainservicios p {
+  color: rgb(13, 13, 121);
+  margin: 50px;
+  font-size: 1.3rem;
+  font-family: $ff-bruno;
+}
+
+
+
 }
 
 
@@ -63,13 +72,13 @@
 
   .mainservicios p {
     color: rgb(13, 13, 121);
-    margin: 20px;
+    margin: 50px;
     font-size: 1.5rem;
     font-family: $ff-bruno;
   }
 
 
-  .mainservicios img {
+  .mainservicios img {    
     margin-left: 450px;
     width: 500px;
     height: auto;

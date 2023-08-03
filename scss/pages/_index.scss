@@ -17,13 +17,14 @@
 .header {
     background-color: $c-primario;
     grid-area: header;
+  
 
 }
 
 .main {
     background-color: #d0f8f8;
     grid-area: main;
-    padding: 15px;
+    padding: 20px;
 }
 
 .aside1 {
@@ -45,49 +46,42 @@
 }
 
 
-.main_container {
+.main {
+   
     display: flex;
-    position: relative;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
 
-
-    & img {
-        position: absolute;
-
+  
+    & img {        
+        width: 100%;
+        margin-top: 30px;
+       
     }
 }
 
-.main_container p {
-    font-family: 'Architects Daughter', cursive;
-    color: rgb(13, 13, 121);
-    position: relative;
-    font-size: 0.8rem;
-    left: 55px;
-    top: 30px;
+.main_container p{
 
+    position: absolute;
 }
-.link {
-    padding: 20px;
-       flex-direction:column;
-       justify-content: center;    
-       text-align: center;
-     color: $c-primario;
-     font-size: 0.6rem;
-     margin-top: 30px;
-     font-family: $ff-archi;
-   }
+
+
+
+
 
 .main_button {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
     font-family: $ff-archi;
     color: #FFFFFF;
     font-size: 0.9rem;
     font-weight: 500;
-    line-height: 22.5px;
-    text-align: center;
+    line-height: 22.5px;  
     padding: 5px;
     border: none;
     border-radius: 3px;
-    position: absolute;
     cursor: pointer;
 
 }
@@ -95,10 +89,9 @@
 .buttonracionp {
     @extend .main_button;
     background-color: $c-primario;
-    left: 10px;
-    top: 330px;
-    width: 160px;
-    height: 50px;
+margin: 5px;
+    width: 220px;
+    height: 40px;
 
     &:hover {
         transform: scale(1.1);
@@ -109,10 +102,9 @@
 .buttonraciong {
     @extend .main_button;
     background-color: $c-primario;
-    left: 180px;
-    top: 330px;
-    width: 160px;
-    height: 50px;
+    margin: 5px;
+    width: 220px;
+    height: 40px;
 
     &:hover {
         transform: scale(1.1);
@@ -126,10 +118,9 @@
 .buttonantip {
     @extend .main_button;
     background-color: $c-primario;
-    left: 10px;
-    top: 400px;
-    width: 160px;
-    height: 50px;
+    margin: 5px;
+    width: 220px;
+    height: 40px;
 
     &:hover {
         transform: scale(1.1);
@@ -141,10 +132,9 @@
 .buttonaccesorios {
     @extend .main_button;
     background-color: $c-primario;
-    left: 180px;
-    top: 400px;
-    width: 160px;
-    height: 50px;
+    margin: 5px;
+    width: 220px;
+    height: 40px;
 
 
     &:hover {
@@ -208,23 +198,9 @@
 
     }
 
-    .main_container p {
-        font-weight: 600;
-        font-size: 1.2rem;
-        
-    }
+   
 
-    .link {
-        padding: 50px;
-           flex-direction:column;
-           justify-content: center;    
-           text-align: center;
-         color: $c-primario;
-         font-size: 1.5rem;
-         margin-top: 30px;
-         font-family: $ff-archi;
-       
-       }
+   
     
     .main_button {
         font-family: $ff-archi;
@@ -237,7 +213,7 @@
         border: none;
         border-radius: 3px;
         left: 72%;
-        position: absolute;
+         
         cursor: pointer;
 
     }
@@ -352,21 +328,8 @@
         }
     }
 
-    .main_container p {
-        font-size: 1.8rem;
-     
-    }
+  
 
-    .link {
-        padding: 90px;
-           flex-direction:column;
-           justify-content: center;    
-           text-align: center;
-         color: $c-primario;
-         font-size: 2rem;
-         margin-top: 30px;
-         font-family: $ff-archi;
-       }
 
     .buttonracionp {
         font-size: 1.5rem;

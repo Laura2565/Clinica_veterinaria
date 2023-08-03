@@ -479,6 +479,16 @@ img {
     height: 60px;
   }
 }
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #28d9e6;
+  font-size: 1.5rem;
+  font-family: "Architects Daughter", cursive;
+  margin: 20px;
+}
+
 .contacto h4 {
   margin-left: 20px;
   margin-top: 20px;
@@ -549,7 +559,7 @@ img {
 .main {
   background-color: #d0f8f8;
   grid-area: main;
-  padding: 15px;
+  padding: 20px;
 }
 
 .aside1 {
@@ -569,55 +579,41 @@ img {
   margin-bottom: 0;
 }
 
-.main_container {
+.main {
   display: flex;
-  position: relative;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
-.main_container img {
-  position: absolute;
+.main img {
+  width: 100%;
+  margin-top: 30px;
 }
 
 .main_container p {
-  font-family: "Architects Daughter", cursive;
-  color: rgb(13, 13, 121);
-  position: relative;
-  font-size: 0.8rem;
-  left: 55px;
-  top: 30px;
-}
-
-.link {
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: #28d9e6;
-  font-size: 0.6rem;
-  margin-top: 30px;
-  font-family: "Architects Daughter", cursive;
+  position: absolute;
 }
 
 .main_button, .buttonaccesorios, .buttonantip, .buttonraciong, .buttonracionp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Architects Daughter", cursive;
   color: #FFFFFF;
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 22.5px;
-  text-align: center;
   padding: 5px;
   border: none;
   border-radius: 3px;
-  position: absolute;
   cursor: pointer;
 }
 
 .buttonracionp {
   background-color: #28d9e6;
-  left: 10px;
-  top: 330px;
-  width: 160px;
-  height: 50px;
+  margin: 5px;
+  width: 220px;
+  height: 40px;
 }
 .buttonracionp:hover {
   transform: scale(1.1);
@@ -625,10 +621,9 @@ img {
 
 .buttonraciong {
   background-color: #28d9e6;
-  left: 180px;
-  top: 330px;
-  width: 160px;
-  height: 50px;
+  margin: 5px;
+  width: 220px;
+  height: 40px;
 }
 .buttonraciong:hover {
   transform: scale(1.1);
@@ -636,10 +631,9 @@ img {
 
 .buttonantip {
   background-color: #28d9e6;
-  left: 10px;
-  top: 400px;
-  width: 160px;
-  height: 50px;
+  margin: 5px;
+  width: 220px;
+  height: 40px;
 }
 .buttonantip:hover {
   transform: scale(1.1);
@@ -647,10 +641,9 @@ img {
 
 .buttonaccesorios {
   background-color: #28d9e6;
-  left: 180px;
-  top: 400px;
-  width: 160px;
-  height: 50px;
+  margin: 5px;
+  width: 220px;
+  height: 40px;
 }
 .buttonaccesorios:hover {
   transform: scale(1.1);
@@ -696,20 +689,6 @@ img {
     height: 100%;
     width: 70%;
   }
-  .main_container p {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-  .link {
-    padding: 50px;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #28d9e6;
-    font-size: 1.5rem;
-    margin-top: 30px;
-    font-family: "Architects Daughter", cursive;
-  }
   .main_button, .buttonracionp, .buttonraciong, .buttonantip, .buttonaccesorios {
     font-family: "Architects Daughter", cursive;
     color: #FFFFFF;
@@ -721,7 +700,6 @@ img {
     border: none;
     border-radius: 3px;
     left: 72%;
-    position: absolute;
     cursor: pointer;
   }
   .buttonracionp {
@@ -792,19 +770,6 @@ img {
     width: 70%;
     object-fit: cover;
   }
-  .main_container p {
-    font-size: 1.8rem;
-  }
-  .link {
-    padding: 90px;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #28d9e6;
-    font-size: 2rem;
-    margin-top: 30px;
-    font-family: "Architects Daughter", cursive;
-  }
   .buttonracionp {
     font-size: 1.5rem;
     top: 70px;
@@ -873,14 +838,14 @@ img {
 }
 .mainservicios h3 {
   color: #28d9e6;
-  padding: 5px;
+  margin: 30px;
   font-size: 1.2rem;
   font-family: "Architects Daughter", cursive;
 }
 
 .mainservicios p {
   color: rgb(13, 13, 121);
-  margin: 10px;
+  margin: 30px;
   font-size: 1rem;
   font-family: "Bruno Ace", cursive;
 }
@@ -896,11 +861,16 @@ img {
 
 @media (min-width: 768px) {
   .mainservicios img {
-    padding: 10px;
     width: 400px;
     margin-left: 250px;
     box-shadow: 10px 10px 15px rgb(240, 224, 194);
     height: auto;
+  }
+  .mainservicios p {
+    color: rgb(13, 13, 121);
+    margin: 50px;
+    font-size: 1.3rem;
+    font-family: "Bruno Ace", cursive;
   }
 }
 @media (min-width: 1200px) {
@@ -925,7 +895,7 @@ img {
   }
   .mainservicios p {
     color: rgb(13, 13, 121);
-    margin: 20px;
+    margin: 50px;
     font-size: 1.5rem;
     font-family: "Bruno Ace", cursive;
   }
