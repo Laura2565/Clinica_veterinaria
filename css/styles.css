@@ -483,6 +483,8 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.link a {
   color: #28d9e6;
   font-size: 1.5rem;
   font-family: "Architects Daughter", cursive;
@@ -544,7 +546,7 @@ img {
 }
 .container {
   width: 100%;
-  height: 98vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10% 50% 30% 10%;
@@ -583,14 +585,20 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .main img {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .main_container p {
   position: absolute;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-family: "Architects Daughter", cursive;
+  font-size: 0.8rem;
+  color: rgb(13, 13, 121);
 }
 
 .main_button, .buttonaccesorios, .buttonantip, .buttonraciong, .buttonracionp {
@@ -612,7 +620,7 @@ img {
 .buttonracionp {
   background-color: #28d9e6;
   margin: 5px;
-  width: 220px;
+  width: 90%;
   height: 40px;
 }
 .buttonracionp:hover {
@@ -622,7 +630,7 @@ img {
 .buttonraciong {
   background-color: #28d9e6;
   margin: 5px;
-  width: 220px;
+  width: 90%;
   height: 40px;
 }
 .buttonraciong:hover {
@@ -632,7 +640,7 @@ img {
 .buttonantip {
   background-color: #28d9e6;
   margin: 5px;
-  width: 220px;
+  width: 90%;
   height: 40px;
 }
 .buttonantip:hover {
@@ -642,8 +650,9 @@ img {
 .buttonaccesorios {
   background-color: #28d9e6;
   margin: 5px;
-  width: 220px;
+  width: 90%;
   height: 40px;
+  margin-bottom: 20px;
 }
 .buttonaccesorios:hover {
   transform: scale(1.1);
@@ -671,22 +680,17 @@ img {
 @media (min-width: 768px) {
   .container {
     width: 100%;
-    height: 98vh;
+    height: 100;
     padding: 5px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% 50% 20% 15%;
     grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
   }
-  .main_container {
+  .main img {
     display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  .main_container img {
-    object-fit: cover;
+    flex-direction: column;
     justify-content: center;
-    height: 100%;
     width: 70%;
   }
   .main_button, .buttonracionp, .buttonraciong, .buttonantip, .buttonaccesorios {
@@ -695,11 +699,10 @@ img {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 22.5px;
-    text-align: center;
     padding: 10px;
     border: none;
     border-radius: 3px;
-    left: 72%;
+    width: 30%;
     cursor: pointer;
   }
   .buttonracionp {
