@@ -486,11 +486,23 @@ img {
 }
 .link a {
   color: #28d9e6;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-family: "Architects Daughter", cursive;
-  margin: 20px;
+  margin: 10px;
 }
 
+@media (min-width: 768px) {
+  .link a {
+    font-size: 2rem;
+    margin: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .link a {
+    margin: 30px;
+    font-size: 2.3rem;
+  }
+}
 .contacto h4 {
   margin-left: 20px;
   margin-top: 20px;
@@ -687,11 +699,25 @@ img {
     grid-template-rows: 15% 50% 20% 15%;
     grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
   }
+  .main_container {
+    padding: 30px;
+    display: flex;
+  }
+  .main_container p {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: "Architects Daughter", cursive;
+    font-size: 1.5rem;
+    color: rgb(13, 13, 121);
+  }
   .main img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
   }
   .main_button, .buttonracionp, .buttonraciong, .buttonantip, .buttonaccesorios {
     font-family: "Architects Daughter", cursive;
@@ -756,22 +782,17 @@ img {
 @media (min-width: 1200px) {
   .container {
     width: 100%;
-    height: 98vh;
+    height: 100;
     padding: 5px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% 50% 20% 15%;
     grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
   }
-  .main {
-    padding: 20px;
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
   .main img {
-    width: 70%;
-    object-fit: cover;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .buttonracionp {
     font-size: 1.5rem;

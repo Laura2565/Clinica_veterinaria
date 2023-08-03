@@ -7,11 +7,32 @@
 
      & a {
      color: $c-primario;
-     font-size: 1.5rem;
+     font-size: 0.8rem;
      font-family: $ff-archi;
-     margin: 20px;
+     margin: 10px;
      
    }
   }
 
-  
+  @media(min-width: 768px){
+
+    .link a {
+
+      font-size: 2rem;
+      margin: 20px;
+     }
+
+
+  }
+
+
+
+  @media(min-width: 1200px){
+
+    .link a {
+      margin: 30px;
+      font-size: 2.3rem;
+     }
+
+
+  }
