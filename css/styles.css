@@ -64,9 +64,9 @@ img {
     border-radius: 5px;
     background-color: white;
     width: 230px;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 70%;
-    height: 30px;
+    height: 25px;
     border: none;
     justify-content: center;
   }
@@ -78,7 +78,7 @@ img {
     background-color: white;
     border: none;
     width: 90px;
-    height: 30px;
+    height: 25px;
   }
 }
 .form input {
@@ -301,7 +301,7 @@ img {
 }
 @media (min-width: 768px) {
   .container_top-nav h1 {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     font-family: "Architects Daughter", cursive;
     font-size: 2.2rem;
@@ -346,7 +346,7 @@ img {
     color: white;
     font-size: 1.2rem;
     position: absolute;
-    margin-top: 160px;
+    margin-top: 150px;
     margin-left: 20%;
     width: 50%;
   }
@@ -358,8 +358,8 @@ img {
   }
   .container_top-nav img {
     box-shadow: 3px 3px 20px white;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     position: relative;
     top: 40px;
   }
@@ -469,7 +469,7 @@ img {
 
 .footer {
   display: flex;
-  padding: 40px;
+  padding: 30px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -616,7 +616,7 @@ img {
 }
 .main img {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .main_container p {
@@ -721,9 +721,9 @@ img {
   .main_container p {
     position: absolute;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 30px;
     font-family: "Architects Daughter", cursive;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(13, 13, 121);
   }
   .main img {
@@ -731,15 +731,17 @@ img {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
     width: 100%;
   }
   .main_button, .buttonracionp, .buttonraciong, .buttonantip, .buttonaccesorios {
+    margin: 20px 10px;
     font-family: "Architects Daughter", cursive;
     color: #FFFFFF;
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 22.5px;
-    padding: 10px;
+    padding: 20px;
     border: none;
     border-radius: 3px;
     width: 30%;
@@ -747,7 +749,7 @@ img {
   }
   .buttonracionp {
     top: 80px;
-    width: 190px;
+    width: 200px;
     height: 50px;
   }
   .buttonracionp:hover {
@@ -755,7 +757,7 @@ img {
   }
   .buttonraciong {
     top: 180px;
-    width: 190px;
+    width: 200px;
     height: 50px;
   }
   .buttonraciong:hover {
@@ -763,7 +765,7 @@ img {
   }
   .buttonantip {
     top: 280px;
-    width: 190px;
+    width: 200px;
     height: 50px;
   }
   .buttonantip:hover {
@@ -771,7 +773,7 @@ img {
   }
   .buttonaccesorios {
     top: 380px;
-    width: 190px;
+    width: 200px;
     height: 50px;
   }
   .buttonaccesorios:hover {
@@ -805,11 +807,10 @@ img {
   }
   .main img {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
   }
   .buttonracionp {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     top: 70px;
     width: 300px;
     height: 50px;
@@ -819,7 +820,7 @@ img {
     transform: scale(1.1);
   }
   .buttonraciong {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     top: 170px;
     width: 300px;
     height: 50px;
@@ -829,7 +830,7 @@ img {
     transform: scale(1.1);
   }
   .buttonantip {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     top: 270px;
     width: 300px;
     height: 50px;
@@ -839,7 +840,7 @@ img {
     transform: scale(1.1);
   }
   .buttonaccesorios {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     top: 370px;
     width: 300px;
     height: 50px;
