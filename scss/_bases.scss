@@ -9,27 +9,21 @@ $ff-bruno: 'Bruno Ace', cursive;
   text-decoration: none;
 }
 
-
-
 img {
   width: 100%;
 
 
 }
 
-
-
-
 @mixin position-center {
   position: relative;
   text-align: center;
 }
 
-
 @mixin display-center {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

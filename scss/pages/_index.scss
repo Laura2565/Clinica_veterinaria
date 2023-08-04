@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: 100%;   
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 50% 30% 10%;
@@ -15,7 +15,7 @@
 .header {
     background-color: $c-primario;
     grid-area: header;
-  
+
 }
 
 .main {
@@ -44,40 +44,39 @@
 
 
 .main {
-   
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-  
-    & img {        
+
+    & img {
         width: 100%;
         margin-top: 40px;
-            
-       
+
+
     }
 }
 
-.main_container p{
-position: absolute;
+.main_container p {
+    position: absolute;
     margin-top: 40px;
     margin-left: 20px;
     font-family: $ff-archi;
-    font-size: 0.8rem; 
-    color:rgb(13, 13, 121)
-
+    font-size: 0.8rem;
+    color: rgb(13, 13, 121)
 }
 
 .main_button {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: $ff-archi;
     color: #FFFFFF;
     font-size: 0.9rem;
     font-weight: 500;
-    line-height: 22.5px;  
+    line-height: 22.5px;
     padding: 5px;
     border: none;
     border-radius: 3px;
@@ -88,7 +87,7 @@ position: absolute;
 .buttonracionp {
     @extend .main_button;
     background-color: $c-primario;
-margin: 5px;
+    margin: 5px;
     width: 90%;
     height: 40px;
 
@@ -120,7 +119,7 @@ margin: 5px;
     margin: 5px;
     width: 90%;
     height: 40px;
-   
+
 
     &:hover {
         transform: scale(1.1);
@@ -181,31 +180,32 @@ margin: 5px;
             "footer footer";
 
     }
-  
-     .main_container{
-      padding: 10px;
-        display:flex ;
-        & p{
-        position: absolute;
+
+    .main_container {
+        padding: 10px;
+        display: flex;
+
+        & p {
+            position: absolute;
             margin-top: 40px;
             margin-left: 30px;
             font-family: $ff-archi;
-            font-size: 1.3rem; 
-            color:rgb(13, 13, 121)
-        
+            font-size: 1.3rem;
+            color: rgb(13, 13, 121)
         }
 
     }
+
     .main img {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 10px;
         margin-top: 10px;
-        width: 100%;   
+        width: 100%;
 
-    } 
-     
+    }
+
     .main_button {
         margin: 20px 10px;
         font-family: $ff-archi;
@@ -216,7 +216,7 @@ margin: 5px;
         padding: 20px;
         border: none;
         border-radius: 3px;
-         width: 30%;
+        width: 30%;
         cursor: pointer;
 
     }
@@ -315,18 +315,18 @@ margin: 5px;
             "footer footer";
 
     }
-   
 
 
-       
-            .main img {
-                width: 100%;   
-                margin-top: 10px;
-             
-            } 
-             
-               
-            
+
+
+    .main img {
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+
+
     .buttonracionp {
         font-size: 1.4rem;
         top: 70px;
@@ -397,7 +397,7 @@ margin: 5px;
 
     }
 
-    .aside1_container p {     
+    .aside1_container p {
         font-family: $ff-archi;
         color: rgb(13, 13, 121);
         font-size: 1.5rem;
@@ -413,7 +413,7 @@ margin: 5px;
 
 
         & img {
-          height: 80%;
+            height: 80%;
             margin-left: 20px;
 
         }

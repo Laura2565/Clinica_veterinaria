@@ -28,7 +28,7 @@
 
   .contacto a {
     font-size: 1.8rem;
-   
+
     margin-top: 20px;
     color: $c-primario;
     font-family: $ff-archi;
@@ -44,7 +44,7 @@
 
   .mapa {
     margin: 15px;
-}
+  }
 
 
 }
@@ -52,7 +52,7 @@
 
 
 @media(min-width: 1200px) {
- .contacto h4 {
+  .contacto h4 {
     font-size: 1.8rem;
     margin-top: 20px;
     color: $c-primario;
@@ -69,8 +69,8 @@
 
 
   .mapa {
-  
-      margin: 15px;
+
+    margin: 15px;
   }
 
 }
