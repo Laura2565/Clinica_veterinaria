@@ -16,7 +16,6 @@
     background-color: $c-primario;
     grid-area: header;
   
-
 }
 
 .main {
@@ -53,7 +52,7 @@
   
     & img {        
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
             
        
     }
@@ -183,9 +182,8 @@ margin: 5px;
 
     }
   
-
      .main_container{
-        padding: 30px;
+      padding: 10px;
         display:flex ;
         & p{
         position: absolute;
@@ -202,8 +200,7 @@ margin: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         width: 100%;   
 
     } 
